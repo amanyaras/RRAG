@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 """
 Common utilities.
 """
@@ -383,6 +383,4 @@ def image_moderation_filter(image):
         csam_flagged = image_moderation_provider(image_bytes, "csam")
 
     return nsfw_flagged, csam_flagged
-=======
-import logging
->>>>>>> 7f8945c052a5e85a8354f754192cb2adef3a5531
+
