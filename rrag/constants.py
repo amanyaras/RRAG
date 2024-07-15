@@ -1,2 +1,5 @@
 import os
 
+
+LOGDIR = ""
+
