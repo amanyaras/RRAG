@@ -33,8 +33,8 @@ from transformers.utils import is_torch_bf16_gpu_available
 from transformers.utils.versions import require_version
 
 from ..constants import CHECKPOINT_NAMES
-from ..utils.utils import build_logger
-from ..extras.misc import check_dependencies, get_current_device
+from ..utils.logging import build_logger
+from ..utils.misc import check_dependencies, get_current_device
 from .data_args import DataArguments
 from .evaluation_args import EvaluationArguments
 from .generating_args import GeneratingArguments
