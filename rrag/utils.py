@@ -1,5 +1,6 @@
-
 """
+this file is partly from https://github.com/lm-sys/FastChat/tree/main/fastchat
+Thanks for their wonderful work
 Common utilities.
 """
 from asyncio import AbstractEventLoop
@@ -383,4 +384,3 @@ def image_moderation_filter(image):
         csam_flagged = image_moderation_provider(image_bytes, "csam")
 
     return nsfw_flagged, csam_flagged
-
