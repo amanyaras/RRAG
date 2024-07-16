@@ -21,7 +21,7 @@ if __name__ == "__main__":
     # }
     # result = generate_data(**args)
     model_args, data_args, finetuning_args, generating_args = get_infer_args()
-    # print(pars)
+    print(model_args)
 
     # print(result[:9])
     # print(len(data))

@@ -1,6 +1,3 @@
-# this code is partly from https://raw.githubusercontent.com/hiyouga/LLaMA-Factory/
-# Thanks for their wonderful work
-
 # Copyright 2024 HuggingFace Inc. and the LlamaFactory team.
 #
 # This code is inspired by the HuggingFace's transformers library.
@@ -37,9 +34,9 @@ from ..utils.logging import build_logger
 from ..utils.misc import check_dependencies, get_current_device
 from .data_args import DataArguments
 from .evaluation_args import EvaluationArguments
+from .finetuning_args import FinetuningArguments
 from .generating_args import GeneratingArguments
 from .model_args import ModelArguments
-from .rsft_args import RetrivModelSFTArguments
 
 
 logger = build_logger(__name__, "{}.log".format(__name__))
@@ -48,12 +45,12 @@ logger = build_logger(__name__, "{}.log".format(__name__))
 check_dependencies()
 
 
-_TRAIN_ARGS = [ModelArguments, DataArguments, Seq2SeqTrainingArguments, GeneratingArguments]
-_TRAIN_CLS = Tuple[ModelArguments, DataArguments, Seq2SeqTrainingArguments, GeneratingArguments]
-_INFER_ARGS = [ModelArguments, DataArguments, RetrivModelSFTArguments, GeneratingArguments]
-_INFER_CLS = Tuple[ModelArguments, DataArguments, RetrivModelSFTArguments, GeneratingArguments]
-_EVAL_ARGS = [ModelArguments, DataArguments, EvaluationArguments, ]
-_EVAL_CLS = Tuple[ModelArguments, DataArguments, EvaluationArguments, ]
+_TRAIN_ARGS = [ModelArguments, DataArguments, Seq2SeqTrainingArguments, FinetuningArguments, GeneratingArguments]
+_TRAIN_CLS = Tuple[ModelArguments, DataArguments, Seq2SeqTrainingArguments, FinetuningArguments, GeneratingArguments]
+_INFER_ARGS = [ModelArguments, DataArguments, FinetuningArguments, GeneratingArguments]
+_INFER_CLS = Tuple[ModelArguments, DataArguments, FinetuningArguments, GeneratingArguments]
+_EVAL_ARGS = [ModelArguments, DataArguments, EvaluationArguments, FinetuningArguments]
+_EVAL_CLS = Tuple[ModelArguments, DataArguments, EvaluationArguments, FinetuningArguments]
 
 
 def _parse_args(parser: "HfArgumentParser", args: Optional[Dict[str, Any]] = None) -> Tuple[Any]:
@@ -82,7 +79,7 @@ def _set_transformers_logging(log_level: Optional[int] = logging.INFO) -> None:
     transformers.utils.logging.enable_explicit_format()
 
 
-def _verify_model_args(model_args: "ModelArguments", finetuning_args: "") -> None:
+def _verify_model_args(model_args: "ModelArguments", finetuning_args: "FinetuningArguments") -> None:
     if model_args.adapter_name_or_path is not None and finetuning_args.finetuning_type != "lora":
         raise ValueError("Adapter is only valid for the LoRA method.")
 
@@ -105,7 +102,7 @@ def _verify_model_args(model_args: "ModelArguments", finetuning_args: "") -> Non
 
 def _check_extra_dependencies(
     model_args: "ModelArguments",
-    finetuning_args: "",
+    finetuning_args: "FinetuningArguments",
     training_args: Optional["Seq2SeqTrainingArguments"] = None,
 ) -> None:
     if model_args.use_unsloth:
@@ -132,22 +129,22 @@ def _check_extra_dependencies(
         require_version("rouge_chinese", "To fix: pip install rouge-chinese")
 
 
-def _parse_train_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any]:
+def _parse_train_args(args: Optional[Dict[str, Any]] = None) -> _TRAIN_CLS:
     parser = HfArgumentParser(_TRAIN_ARGS)
     return _parse_args(parser, args)
 
 
-def _parse_infer_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any]:
+def _parse_infer_args(args: Optional[Dict[str, Any]] = None) -> _INFER_CLS:
     parser = HfArgumentParser(_INFER_ARGS)
     return _parse_args(parser, args)
 
 
-def _parse_eval_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any]:
+def _parse_eval_args(args: Optional[Dict[str, Any]] = None) -> _EVAL_CLS:
     parser = HfArgumentParser(_EVAL_ARGS)
     return _parse_args(parser, args)
 
 
-def get_train_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any, Any, Any, Any, Any]:
+def get_train_args(args: Optional[Dict[str, Any]] = None) -> _TRAIN_CLS:
     model_args, data_args, training_args, finetuning_args, generating_args = _parse_train_args(args)
 
     # Setup logging
@@ -332,7 +329,7 @@ def get_train_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any, Any, Any
     return model_args, data_args, training_args, finetuning_args, generating_args
 
 
-def get_infer_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any, Any, Any, Any]:
+def get_infer_args(args: Optional[Dict[str, Any]] = None) -> _INFER_CLS:
     model_args, data_args, finetuning_args, generating_args = _parse_infer_args(args)
 
     _set_transformers_logging()
@@ -368,7 +365,7 @@ def get_infer_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any, Any, Any
     return model_args, data_args, finetuning_args, generating_args
 
 
-def get_eval_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any, Any, Any, Any]:
+def get_eval_args(args: Optional[Dict[str, Any]] = None) -> _EVAL_CLS:
     model_args, data_args, eval_args, finetuning_args = _parse_eval_args(args)
 
     _set_transformers_logging()
