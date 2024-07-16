@@ -39,6 +39,7 @@ from .data_args import DataArguments
 from .evaluation_args import EvaluationArguments
 from .generating_args import GeneratingArguments
 from .model_args import ModelArguments
+from .rsft_args import RetrivModelSFTArguments
 
 
 logger = build_logger(__name__, "{}.log".format(__name__))
@@ -49,8 +50,8 @@ check_dependencies()
 
 _TRAIN_ARGS = [ModelArguments, DataArguments, Seq2SeqTrainingArguments, GeneratingArguments]
 _TRAIN_CLS = Tuple[ModelArguments, DataArguments, Seq2SeqTrainingArguments, GeneratingArguments]
-_INFER_ARGS = [ModelArguments, DataArguments, GeneratingArguments]
-_INFER_CLS = Tuple[ModelArguments, DataArguments, GeneratingArguments]
+_INFER_ARGS = [ModelArguments, DataArguments, RetrivModelSFTArguments, GeneratingArguments]
+_INFER_CLS = Tuple[ModelArguments, DataArguments, RetrivModelSFTArguments, GeneratingArguments]
 _EVAL_ARGS = [ModelArguments, DataArguments, EvaluationArguments, ]
 _EVAL_CLS = Tuple[ModelArguments, DataArguments, EvaluationArguments, ]
 

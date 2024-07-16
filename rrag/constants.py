@@ -1,7 +1,7 @@
 import os
 
 
-LOGDIR = ""
+LOGDIR = "/home/zhangyh/projs/rrag/logdir"
 
 CHECKPOINT_NAMES = ""
 # Copyright 2024 the LlamaFactory team.

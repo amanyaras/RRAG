@@ -1,0 +1,32 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Requirement already satisfied: transformers in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (4.40.1)
+Collecting transformers
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6a/dc/23c26b7b0bce5aaccf2b767db3e9c4f5ae4331bd47688c1f2ef091b23696/transformers-4.42.4-py3-none-any.whl (9.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 5.8 MB/s eta 0:00:00
+Requirement already satisfied: filelock in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from transformers) (3.14.0)
+Collecting huggingface-hub<1.0,>=0.23.2 (from transformers)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/69/d6/73f9d1b7c4da5f0544bc17680d0fa9932445423b90cd38e1ee77d001a4f5/huggingface_hub-0.23.4-py3-none-any.whl (402 kB)
+Requirement already satisfied: numpy<2.0,>=1.17 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from transformers) (1.26.4)
+Requirement already satisfied: packaging>=20.0 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from transformers) (23.2)
+Requirement already satisfied: pyyaml>=5.1 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from transformers) (6.0.1)
+Requirement already satisfied: regex!=2019.12.17 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from transformers) (2024.4.28)
+Requirement already satisfied: requests in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from transformers) (2.31.0)
+Requirement already satisfied: safetensors>=0.4.1 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from transformers) (0.4.3)
+Requirement already satisfied: tokenizers<0.20,>=0.19 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from transformers) (0.19.1)
+Requirement already satisfied: tqdm>=4.27 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from transformers) (4.66.4)
+Requirement already satisfied: fsspec>=2023.5.0 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.23.2->transformers) (2024.3.1)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.23.2->transformers) (4.11.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from requests->transformers) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from requests->transformers) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from requests->transformers) (2.2.1)
+Requirement already satisfied: certifi>=2017.4.17 in /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages (from requests->transformers) (2024.2.2)
+Installing collected packages: huggingface-hub, transformers
+  Attempting uninstall: huggingface-hub
+    Found existing installation: huggingface-hub 0.23.0
+    Uninstalling huggingface-hub-0.23.0:
+      Successfully uninstalled huggingface-hub-0.23.0
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.40.1
+    Uninstalling transformers-4.40.1:
+      Successfully uninstalled transformers-4.40.1
+Successfully installed huggingface-hub-0.23.4 transformers-4.42.4
