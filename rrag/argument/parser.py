@@ -131,22 +131,22 @@ def _check_extra_dependencies(
         require_version("rouge_chinese", "To fix: pip install rouge-chinese")
 
 
-def _parse_train_args(args: Optional[Dict[str, Any]] = None) -> _TRAIN_CLS:
+def _parse_train_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any]:
     parser = HfArgumentParser(_TRAIN_ARGS)
     return _parse_args(parser, args)
 
 
-def _parse_infer_args(args: Optional[Dict[str, Any]] = None) -> _INFER_CLS:
+def _parse_infer_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any]:
     parser = HfArgumentParser(_INFER_ARGS)
     return _parse_args(parser, args)
 
 
-def _parse_eval_args(args: Optional[Dict[str, Any]] = None) -> _EVAL_CLS:
+def _parse_eval_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any]:
     parser = HfArgumentParser(_EVAL_ARGS)
     return _parse_args(parser, args)
 
 
-def get_train_args(args: Optional[Dict[str, Any]] = None) -> _TRAIN_CLS:
+def get_train_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any, Any, Any, Any, Any]:
     model_args, data_args, training_args, finetuning_args, generating_args = _parse_train_args(args)
 
     # Setup logging
@@ -331,7 +331,7 @@ def get_train_args(args: Optional[Dict[str, Any]] = None) -> _TRAIN_CLS:
     return model_args, data_args, training_args, finetuning_args, generating_args
 
 
-def get_infer_args(args: Optional[Dict[str, Any]] = None) -> _INFER_CLS:
+def get_infer_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any, Any, Any, Any]:
     model_args, data_args, finetuning_args, generating_args = _parse_infer_args(args)
 
     _set_transformers_logging()
@@ -367,7 +367,7 @@ def get_infer_args(args: Optional[Dict[str, Any]] = None) -> _INFER_CLS:
     return model_args, data_args, finetuning_args, generating_args
 
 
-def get_eval_args(args: Optional[Dict[str, Any]] = None) -> _EVAL_CLS:
+def get_eval_args(args: Optional[Dict[str, Any]] = None) -> tuple[Any, Any, Any, Any]:
     model_args, data_args, eval_args, finetuning_args = _parse_eval_args(args)
 
     _set_transformers_logging()
