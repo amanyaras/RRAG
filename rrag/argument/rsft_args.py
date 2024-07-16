@@ -8,6 +8,7 @@ if TYPE_CHECKING:
     import torch
 
 
+@dataclass
 class RetrivModelSFTArguments:
     r"""
     Arguments pertaining to which model/config/tokenizer we are going to fine-tune or infer.

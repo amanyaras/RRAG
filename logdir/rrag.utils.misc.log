@@ -693,3 +693,15 @@
 2024-07-16 11:54:09 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/dataclasses.py", line 1198, in fields
 2024-07-16 11:54:09 | ERROR | stderr |     raise TypeError('must be called with a dataclass type or instance') from None
 2024-07-16 11:54:09 | ERROR | stderr | TypeError: must be called with a dataclass type or instance
+2024-07-16 14:01:31 | ERROR | stderr | Traceback (most recent call last):
+2024-07-16 14:01:31 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/test/tmp.py", line 23, in <module>
+2024-07-16 14:01:31 | ERROR | stderr |     model_args, data_args, finetuning_args, generating_args = get_infer_args()
+2024-07-16 14:01:31 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/argument/parser.py", line 344, in get_infer_args
+2024-07-16 14:01:31 | ERROR | stderr |     if finetuning_args.stage != "sft":
+2024-07-16 14:01:31 | ERROR | stderr | AttributeError: 'RetrivModelSFTArguments' object has no attribute 'stage'
+2024-07-16 14:20:11 | ERROR | stderr | Traceback (most recent call last):
+2024-07-16 14:20:11 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/test/tmp.py", line 23, in <module>
+2024-07-16 14:20:11 | ERROR | stderr |     model_args, data_args, finetuning_args, generating_args = get_infer_args()
+2024-07-16 14:20:11 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/argument/parser.py", line 344, in get_infer_args
+2024-07-16 14:20:11 | ERROR | stderr |     if finetuning_args.stage != "sft":
+2024-07-16 14:20:11 | ERROR | stderr | AttributeError: 'RetrivModelSFTArguments' object has no attribute 'stage'
