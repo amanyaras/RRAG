@@ -2,6 +2,7 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 os.environ["export VLLM_WORKER_MULTIPROC_METHOD"] = "spawn"
 import torch
+from rrag.data.save import save_data
 from rrag.utils.setting import setting_env_init
 from rrag.utils.logging import build_logger
 import multiprocessing
@@ -27,6 +28,7 @@ if __name__ == "__main__":
         # finetuning_args = finetuning_args.
         logger.info(model_args)
         ans = get_rouge(**model_args)
+        save_data(os.path.join(exp_dir, "result.json"), ans)
         logger.info(ans)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
