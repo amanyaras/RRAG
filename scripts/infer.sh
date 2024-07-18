@@ -1,7 +1,7 @@
 python /home/zhangyh/projs/rrag/main.py \
-  --model_name_or_path /home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1 \
+  --model_name_or_path /home/zhangyh/models/llama-7b-hf \
   --phase infer \
-  --template qwen \
+  --template llama \
   --infer_backend vllm \
   --temperature 0.7 \
   --vllm_maxlen 8192 \
