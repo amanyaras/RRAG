@@ -16,11 +16,12 @@
 # limitations under the License.
 
 import os
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from typing import Literal, Optional
+from typing import TYPE_CHECKING, Any, Dict, Literal, Optional, Union
 
 from datasets import DownloadMode
-
+from typing_extensions import Self
 
 @dataclass
 class EvaluationArguments:
@@ -59,6 +60,9 @@ class EvaluationArguments:
         default=DownloadMode.REUSE_DATASET_IF_EXISTS,
         metadata={"help": "Download mode used for the evaluation datasets."},
     )
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
 
     def __post_init__(self):
         if self.save_dir is not None and os.path.exists(self.save_dir):

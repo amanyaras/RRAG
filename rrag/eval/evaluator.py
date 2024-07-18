@@ -47,6 +47,7 @@ import torch
 from datasets import load_dataset
 from tqdm import tqdm, trange
 from transformers.utils import cached_file
+from rouge import Rouge
 
 from ..data import get_template_and_fix_tokenizer
 from ..constants import CHOICES, SUBJECTS
@@ -155,3 +156,16 @@ class Evaluator:
 
 def run_eval() -> None:
     Evaluator().eval()
+
+
+def cal_rouge(generatr_lst: List, target_lst: List):
+
+    # 创建 Rouge 对象
+    rouge = Rouge()
+
+    # 计算分数
+    scores = rouge.get_scores(generatr_lst, target_lst)
+
+    # 打印分数
+    print(scores)
+    return scores

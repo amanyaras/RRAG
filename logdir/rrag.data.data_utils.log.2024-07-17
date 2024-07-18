@@ -1,0 +1,80 @@
+2024-07-17 08:32:38 | ERROR | stderr | Traceback (most recent call last):
+2024-07-17 08:32:38 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-17 08:32:38 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-07-17 08:32:38 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-17 08:32:38 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/__init__.py", line 17, in <module>
+2024-07-17 08:32:38 | ERROR | stderr |     from .loader import get_dataset
+2024-07-17 08:32:38 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/loader.py", line 29, in <module>
+2024-07-17 08:32:38 | ERROR | stderr |     from .preprocess import get_preprocess_and_print_func
+2024-07-17 08:32:38 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/preprocess.py", line 18, in <module>
+2024-07-17 08:32:38 | ERROR | stderr |     from .processors.feedback import preprocess_feedback_dataset
+2024-07-17 08:32:38 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/processors/feedback.py", line 17, in <module>
+2024-07-17 08:32:38 | ERROR | stderr |     from ...extras.constants import IGNORE_INDEX
+2024-07-17 08:32:38 | ERROR | stderr | ModuleNotFoundError: No module named 'rrag.extras'
+2024-07-17 08:35:01 | ERROR | stderr | Traceback (most recent call last):
+2024-07-17 08:35:01 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-17 08:35:01 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-07-17 08:35:01 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-17 08:35:01 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/__init__.py", line 17, in <module>
+2024-07-17 08:35:01 | ERROR | stderr |     from .loader import get_dataset
+2024-07-17 08:35:01 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/loader.py", line 29, in <module>
+2024-07-17 08:35:01 | ERROR | stderr |     from .preprocess import get_preprocess_and_print_func
+2024-07-17 08:35:01 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/preprocess.py", line 18, in <module>
+2024-07-17 08:35:01 | ERROR | stderr |     from .processors.feedback import preprocess_feedback_dataset
+2024-07-17 08:35:01 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/processors/feedback.py", line 19, in <module>
+2024-07-17 08:35:01 | ERROR | stderr |     from .processor_utils import get_paligemma_token_type_ids, get_pixel_values
+2024-07-17 08:35:01 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/processors/processor_utils.py", line 18, in <module>
+2024-07-17 08:35:01 | ERROR | stderr |     from ...extras.packages import is_pillow_available
+2024-07-17 08:35:01 | ERROR | stderr | ModuleNotFoundError: No module named 'rrag.extras'
+2024-07-17 08:35:22 | ERROR | stderr | Traceback (most recent call last):
+2024-07-17 08:35:22 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-17 08:35:22 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-07-17 08:35:22 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-17 08:35:22 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/__init__.py", line 17, in <module>
+2024-07-17 08:35:22 | ERROR | stderr |     from .loader import get_dataset
+2024-07-17 08:35:22 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/loader.py", line 29, in <module>
+2024-07-17 08:35:22 | ERROR | stderr |     from .preprocess import get_preprocess_and_print_func
+2024-07-17 08:35:22 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/preprocess.py", line 19, in <module>
+2024-07-17 08:35:22 | ERROR | stderr |     from .processors.pairwise import preprocess_pairwise_dataset, print_pairwise_dataset_example
+2024-07-17 08:35:22 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/processors/pairwise.py", line 17, in <module>
+2024-07-17 08:35:22 | ERROR | stderr |     from ...extras.constants import IGNORE_INDEX
+2024-07-17 08:35:22 | ERROR | stderr | ModuleNotFoundError: No module named 'rrag.extras'
+2024-07-17 08:36:00 | ERROR | stderr | Traceback (most recent call last):
+2024-07-17 08:36:00 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-17 08:36:00 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-07-17 08:36:00 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-17 08:36:00 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/__init__.py", line 17, in <module>
+2024-07-17 08:36:00 | ERROR | stderr |     from .loader import get_dataset
+2024-07-17 08:36:00 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/loader.py", line 29, in <module>
+2024-07-17 08:36:00 | ERROR | stderr |     from .preprocess import get_preprocess_and_print_func
+2024-07-17 08:36:00 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/preprocess.py", line 19, in <module>
+2024-07-17 08:36:00 | ERROR | stderr |     from .processors.pairwise import preprocess_pairwise_dataset, print_pairwise_dataset_example
+2024-07-17 08:36:00 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/processors/pairwise.py", line 17, in <module>
+2024-07-17 08:36:00 | ERROR | stderr |     from ...utils.constants import IGNORE_INDEX
+2024-07-17 08:36:00 | ERROR | stderr | ModuleNotFoundError: No module named 'rrag.utils.constants'
+2024-07-17 08:36:15 | ERROR | stderr | Traceback (most recent call last):
+2024-07-17 08:36:15 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-17 08:36:15 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-07-17 08:36:15 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-17 08:36:15 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/__init__.py", line 17, in <module>
+2024-07-17 08:36:15 | ERROR | stderr |     from .loader import get_dataset
+2024-07-17 08:36:15 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/loader.py", line 29, in <module>
+2024-07-17 08:36:15 | ERROR | stderr |     from .preprocess import get_preprocess_and_print_func
+2024-07-17 08:36:15 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/preprocess.py", line 21, in <module>
+2024-07-17 08:36:15 | ERROR | stderr |     from .processors.supervised import (
+2024-07-17 08:36:15 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/processors/supervised.py", line 18, in <module>
+2024-07-17 08:36:15 | ERROR | stderr |     from ...extras.constants import IGNORE_INDEX
+2024-07-17 08:36:15 | ERROR | stderr | ModuleNotFoundError: No module named 'rrag.extras'
+2024-07-17 08:37:01 | ERROR | stderr | Traceback (most recent call last):
+2024-07-17 08:37:01 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-17 08:37:01 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-07-17 08:37:01 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-17 08:37:01 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/__init__.py", line 17, in <module>
+2024-07-17 08:37:01 | ERROR | stderr |     from .loader import get_dataset
+2024-07-17 08:37:01 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/loader.py", line 29, in <module>
+2024-07-17 08:37:01 | ERROR | stderr |     from .preprocess import get_preprocess_and_print_func
+2024-07-17 08:37:01 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/preprocess.py", line 26, in <module>
+2024-07-17 08:37:01 | ERROR | stderr |     from .processors.unsupervised import preprocess_unsupervised_dataset, print_unsupervised_dataset_example
+2024-07-17 08:37:01 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/processors/unsupervised.py", line 17, in <module>
+2024-07-17 08:37:01 | ERROR | stderr |     from ...extras.logging import get_logger
+2024-07-17 08:37:01 | ERROR | stderr | ModuleNotFoundError: No module named 'rrag.extras'

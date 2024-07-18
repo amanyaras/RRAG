@@ -1,0 +1,1015 @@
+2024-07-18 09:07:21 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:07:21 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-18 09:07:21 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-07-18 09:07:21 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-07-18 09:07:21 | ERROR | stderr |   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-07-18 09:07:21 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-18 09:07:21 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/eval/evaluator.py", line 55, in <module>
+2024-07-18 09:07:21 | ERROR | stderr |     from ..model import load_model, load_tokenizer
+2024-07-18 09:07:21 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/__init__.py", line 15, in <module>
+2024-07-18 09:07:21 | ERROR | stderr |     from .loader import load_config, load_model, load_tokenizer
+2024-07-18 09:07:21 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/loader.py", line 28, in <module>
+2024-07-18 09:07:21 | ERROR | stderr |     from .patcher import patch_config, patch_model, patch_tokenizer, patch_valuehead_model
+2024-07-18 09:07:21 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/patcher.py", line 27, in <module>
+2024-07-18 09:07:21 | ERROR | stderr |     from .model_utils.attention import configure_attn_implementation, print_attn_implementation
+2024-07-18 09:07:21 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/model_utils/attention.py", line 19, in <module>
+2024-07-18 09:07:21 | ERROR | stderr |     from ...extras.logging import get_logger
+2024-07-18 09:07:21 | ERROR | stderr | ModuleNotFoundError: No module named 'rrag.extras'
+2024-07-18 09:08:38 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:08:38 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/test/tmp.py", line 8, in <module>
+2024-07-18 09:08:38 | ERROR | stderr |     from rrag.eval.evaluator import cal_rouge
+2024-07-18 09:08:38 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/eval/evaluator.py", line 55, in <module>
+2024-07-18 09:08:38 | ERROR | stderr |     from ..model import load_model, load_tokenizer
+2024-07-18 09:08:38 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/__init__.py", line 15, in <module>
+2024-07-18 09:08:38 | ERROR | stderr |     from .loader import load_config, load_model, load_tokenizer
+2024-07-18 09:08:38 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/loader.py", line 28, in <module>
+2024-07-18 09:08:38 | ERROR | stderr |     from .patcher import patch_config, patch_model, patch_tokenizer, patch_valuehead_model
+2024-07-18 09:08:38 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/patcher.py", line 30, in <module>
+2024-07-18 09:08:38 | ERROR | stderr |     from .model_utils.longlora import configure_longlora
+2024-07-18 09:08:38 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/model_utils/longlora.py", line 25, in <module>
+2024-07-18 09:08:38 | ERROR | stderr |     from transformers.models.llama.modeling_llama import (
+2024-07-18 09:08:38 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 53, in <module>
+2024-07-18 09:08:38 | ERROR | stderr |     from flash_attn import flash_attn_func, flash_attn_varlen_func
+2024-07-18 09:08:38 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/__init__.py", line 3, in <module>
+2024-07-18 09:08:38 | ERROR | stderr |     from flash_attn.flash_attn_interface import (
+2024-07-18 09:08:38 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/flash_attn_interface.py", line 10, in <module>
+2024-07-18 09:08:38 | ERROR | stderr |     import flash_attn_2_cuda as flash_attn_cuda
+2024-07-18 09:08:38 | ERROR | stderr | ImportError: /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so: undefined symbol: _ZN3c104cuda9SetDeviceEi
+2024-07-18 09:08:50 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:08:50 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-18 09:08:50 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-07-18 09:08:50 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-07-18 09:08:50 | ERROR | stderr |   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-07-18 09:08:50 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-18 09:08:50 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/eval/evaluator.py", line 55, in <module>
+2024-07-18 09:08:50 | ERROR | stderr |     from ..model import load_model, load_tokenizer
+2024-07-18 09:08:50 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/__init__.py", line 15, in <module>
+2024-07-18 09:08:50 | ERROR | stderr |     from .loader import load_config, load_model, load_tokenizer
+2024-07-18 09:08:50 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/loader.py", line 28, in <module>
+2024-07-18 09:08:50 | ERROR | stderr |     from .patcher import patch_config, patch_model, patch_tokenizer, patch_valuehead_model
+2024-07-18 09:08:50 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/patcher.py", line 30, in <module>
+2024-07-18 09:08:50 | ERROR | stderr |     from .model_utils.longlora import configure_longlora
+2024-07-18 09:08:50 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/model_utils/longlora.py", line 25, in <module>
+2024-07-18 09:08:50 | ERROR | stderr |     from transformers.models.llama.modeling_llama import (
+2024-07-18 09:08:50 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 53, in <module>
+2024-07-18 09:08:50 | ERROR | stderr |     from flash_attn import flash_attn_func, flash_attn_varlen_func
+2024-07-18 09:08:50 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/__init__.py", line 3, in <module>
+2024-07-18 09:08:50 | ERROR | stderr |     from flash_attn.flash_attn_interface import (
+2024-07-18 09:08:50 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/flash_attn_interface.py", line 10, in <module>
+2024-07-18 09:08:50 | ERROR | stderr |     import flash_attn_2_cuda as flash_attn_cuda
+2024-07-18 09:08:50 | ERROR | stderr | ImportError: /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so: undefined symbol: _ZN3c104cuda9SetDeviceEi
+2024-07-18 09:10:08 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:10:08 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-18 09:10:08 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-07-18 09:10:08 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-07-18 09:10:08 | ERROR | stderr |   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-07-18 09:10:08 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-18 09:10:08 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/eval/evaluator.py", line 55, in <module>
+2024-07-18 09:10:08 | ERROR | stderr |     from ..model import load_model, load_tokenizer
+2024-07-18 09:10:08 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/__init__.py", line 15, in <module>
+2024-07-18 09:10:08 | ERROR | stderr |     from .loader import load_config, load_model, load_tokenizer
+2024-07-18 09:10:08 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/loader.py", line 28, in <module>
+2024-07-18 09:10:08 | ERROR | stderr |     from .patcher import patch_config, patch_model, patch_tokenizer, patch_valuehead_model
+2024-07-18 09:10:08 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/patcher.py", line 30, in <module>
+2024-07-18 09:10:08 | ERROR | stderr |     from .model_utils.longlora import configure_longlora
+2024-07-18 09:10:08 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/model_utils/longlora.py", line 25, in <module>
+2024-07-18 09:10:08 | ERROR | stderr |     from transformers.models.llama.modeling_llama import (
+2024-07-18 09:10:08 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 53, in <module>
+2024-07-18 09:10:08 | ERROR | stderr |     from flash_attn import flash_attn_func, flash_attn_varlen_func
+2024-07-18 09:10:08 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/__init__.py", line 3, in <module>
+2024-07-18 09:10:08 | ERROR | stderr |     from flash_attn.flash_attn_interface import (
+2024-07-18 09:10:08 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/flash_attn_interface.py", line 10, in <module>
+2024-07-18 09:10:08 | ERROR | stderr |     import flash_attn_2_cuda as flash_attn_cuda
+2024-07-18 09:10:08 | ERROR | stderr | ImportError: /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so: undefined symbol: _ZN3c104cuda9SetDeviceEi
+2024-07-18 09:31:32 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:31:32 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/test/test_r.py", line 2, in <module>
+2024-07-18 09:31:32 | ERROR | stderr |     from rrag.eval.evaluator import cal_rouge
+2024-07-18 09:31:32 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/eval/evaluator.py", line 55, in <module>
+2024-07-18 09:31:32 | ERROR | stderr |     from ..model import load_model, load_tokenizer
+2024-07-18 09:31:32 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/__init__.py", line 15, in <module>
+2024-07-18 09:31:32 | ERROR | stderr |     from .loader import load_config, load_model, load_tokenizer
+2024-07-18 09:31:32 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/loader.py", line 28, in <module>
+2024-07-18 09:31:32 | ERROR | stderr |     from .patcher import patch_config, patch_model, patch_tokenizer, patch_valuehead_model
+2024-07-18 09:31:32 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/patcher.py", line 30, in <module>
+2024-07-18 09:31:32 | ERROR | stderr |     from .model_utils.longlora import configure_longlora
+2024-07-18 09:31:32 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/model_utils/longlora.py", line 25, in <module>
+2024-07-18 09:31:32 | ERROR | stderr |     from transformers.models.llama.modeling_llama import (
+2024-07-18 09:31:32 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 53, in <module>
+2024-07-18 09:31:32 | ERROR | stderr |     from flash_attn import flash_attn_func, flash_attn_varlen_func
+2024-07-18 09:31:32 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/__init__.py", line 3, in <module>
+2024-07-18 09:31:32 | ERROR | stderr |     from flash_attn.flash_attn_interface import (
+2024-07-18 09:31:32 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/flash_attn_interface.py", line 10, in <module>
+2024-07-18 09:31:32 | ERROR | stderr |     import flash_attn_2_cuda as flash_attn_cuda
+2024-07-18 09:31:32 | ERROR | stderr | ImportError: /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so: undefined symbol: _ZN3c104cuda9SetDeviceEi
+2024-07-18 09:32:17 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:32:17 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-18 09:32:17 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-07-18 09:32:17 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-07-18 09:32:17 | ERROR | stderr |   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-07-18 09:32:17 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-18 09:32:17 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/eval/evaluator.py", line 55, in <module>
+2024-07-18 09:32:17 | ERROR | stderr |     from ..model import load_model, load_tokenizer
+2024-07-18 09:32:17 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/__init__.py", line 15, in <module>
+2024-07-18 09:32:17 | ERROR | stderr |     from .loader import load_config, load_model, load_tokenizer
+2024-07-18 09:32:17 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/loader.py", line 28, in <module>
+2024-07-18 09:32:17 | ERROR | stderr |     from .patcher import patch_config, patch_model, patch_tokenizer, patch_valuehead_model
+2024-07-18 09:32:17 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/patcher.py", line 30, in <module>
+2024-07-18 09:32:17 | ERROR | stderr |     from .model_utils.longlora import configure_longlora
+2024-07-18 09:32:17 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/model_utils/longlora.py", line 25, in <module>
+2024-07-18 09:32:17 | ERROR | stderr |     from transformers.models.llama.modeling_llama import (
+2024-07-18 09:32:17 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 53, in <module>
+2024-07-18 09:32:17 | ERROR | stderr |     from flash_attn import flash_attn_func, flash_attn_varlen_func
+2024-07-18 09:32:17 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/__init__.py", line 3, in <module>
+2024-07-18 09:32:17 | ERROR | stderr |     from flash_attn.flash_attn_interface import (
+2024-07-18 09:32:17 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/flash_attn_interface.py", line 10, in <module>
+2024-07-18 09:32:17 | ERROR | stderr |     import flash_attn_2_cuda as flash_attn_cuda
+2024-07-18 09:32:17 | ERROR | stderr | ImportError: /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so: undefined symbol: _ZN3c104cuda9SetDeviceEi
+2024-07-18 09:32:56 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:32:56 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-18 09:32:56 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-07-18 09:32:56 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-07-18 09:32:56 | ERROR | stderr |   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-07-18 09:32:56 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-07-18 09:32:56 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/eval/evaluator.py", line 55, in <module>
+2024-07-18 09:32:56 | ERROR | stderr |     from ..model import load_model, load_tokenizer
+2024-07-18 09:32:56 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/__init__.py", line 15, in <module>
+2024-07-18 09:32:56 | ERROR | stderr |     from .loader import load_config, load_model, load_tokenizer
+2024-07-18 09:32:56 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/loader.py", line 28, in <module>
+2024-07-18 09:32:56 | ERROR | stderr |     from .patcher import patch_config, patch_model, patch_tokenizer, patch_valuehead_model
+2024-07-18 09:32:56 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/patcher.py", line 30, in <module>
+2024-07-18 09:32:56 | ERROR | stderr |     from .model_utils.longlora import configure_longlora
+2024-07-18 09:32:56 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/model/model_utils/longlora.py", line 25, in <module>
+2024-07-18 09:32:56 | ERROR | stderr |     from transformers.models.llama.modeling_llama import (
+2024-07-18 09:32:56 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 53, in <module>
+2024-07-18 09:32:56 | ERROR | stderr |     from flash_attn import flash_attn_func, flash_attn_varlen_func
+2024-07-18 09:32:56 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/__init__.py", line 3, in <module>
+2024-07-18 09:32:56 | ERROR | stderr |     from flash_attn.flash_attn_interface import (
+2024-07-18 09:32:56 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn/flash_attn_interface.py", line 10, in <module>
+2024-07-18 09:32:56 | ERROR | stderr |     import flash_attn_2_cuda as flash_attn_cuda
+2024-07-18 09:32:56 | ERROR | stderr | ImportError: /home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so: undefined symbol: _ZN3c104cuda9SetDeviceEi
+2024-07-18 09:35:58 | ERROR | stderr | pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/zhangyh/projs/rrag/test_rrag/tmp.py (will have no effect)
+2024-07-18 09:39:27 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:39:27 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-18 09:39:27 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-07-18 09:39:27 | ERROR | stderr | ModuleNotFoundError: No module named 'test_r'
+2024-07-18 09:41:01 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:41:01 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-07-18 09:41:01 | ERROR | stderr |   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-07-18 09:41:01 | ERROR | stderr | ModuleNotFoundError: No module named 'test_rrag.test_r'
+2024-07-18 09:42:11 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:42:11 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/main.py", line 9, in <module>
+2024-07-18 09:42:11 | ERROR | stderr |     from test_rrag.test_r import get_rouge
+2024-07-18 09:42:11 | ERROR | stderr | ModuleNotFoundError: No module named 'test_rrag.test_r'
+2024-07-18 09:42:47 | ERROR | stderr | usage: main.py [-h] --model_name_or_path MODEL_NAME_OR_PATH
+2024-07-18 09:42:47 | ERROR | stderr |                [--adapter_name_or_path ADAPTER_NAME_OR_PATH]
+2024-07-18 09:42:47 | ERROR | stderr |                [--adapter_folder ADAPTER_FOLDER] [--cache_dir CACHE_DIR]
+2024-07-18 09:42:47 | ERROR | stderr |                [--use_fast_tokenizer [USE_FAST_TOKENIZER]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--no_use_fast_tokenizer] [--resize_vocab [RESIZE_VOCAB]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--split_special_tokens [SPLIT_SPECIAL_TOKENS]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--new_special_tokens NEW_SPECIAL_TOKENS]
+2024-07-18 09:42:47 | ERROR | stderr |                [--model_revision MODEL_REVISION]
+2024-07-18 09:42:47 | ERROR | stderr |                [--low_cpu_mem_usage [LOW_CPU_MEM_USAGE]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--no_low_cpu_mem_usage]
+2024-07-18 09:42:47 | ERROR | stderr |                [--quantization_method {bitsandbytes,hqq,eetq}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--quantization_bit QUANTIZATION_BIT]
+2024-07-18 09:42:47 | ERROR | stderr |                [--quantization_type {fp4,nf4}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--double_quantization [DOUBLE_QUANTIZATION]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--no_double_quantization] [--quantization_device_map {auto}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--rope_scaling {linear,dynamic}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--flash_attn {auto,disabled,sdpa,fa2}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--shift_attn [SHIFT_ATTN]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--mixture_of_depths {convert,load}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--use_unsloth [USE_UNSLOTH]] [--visual_inputs [VISUAL_INPUTS]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--moe_aux_loss_coef MOE_AUX_LOSS_COEF]
+2024-07-18 09:42:47 | ERROR | stderr |                [--disable_gradient_checkpointing [DISABLE_GRADIENT_CHECKPOINTING]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--upcast_layernorm [UPCAST_LAYERNORM]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--upcast_lmhead_output [UPCAST_LMHEAD_OUTPUT]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--train_from_scratch [TRAIN_FROM_SCRATCH]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--infer_backend {huggingface,vllm}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--vllm_maxlen VLLM_MAXLEN] [--vllm_gpu_util VLLM_GPU_UTIL]
+2024-07-18 09:42:47 | ERROR | stderr |                [--vllm_enforce_eager [VLLM_ENFORCE_EAGER]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--vllm_max_lora_rank VLLM_MAX_LORA_RANK]
+2024-07-18 09:42:47 | ERROR | stderr |                [--offload_folder OFFLOAD_FOLDER] [--use_cache [USE_CACHE]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--no_use_cache]
+2024-07-18 09:42:47 | ERROR | stderr |                [--infer_dtype {auto,float16,bfloat16,float32}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--hf_hub_token HF_HUB_TOKEN] [--ms_hub_token MS_HUB_TOKEN]
+2024-07-18 09:42:47 | ERROR | stderr |                [--export_dir EXPORT_DIR] [--export_size EXPORT_SIZE]
+2024-07-18 09:42:47 | ERROR | stderr |                [--export_device {cpu,auto}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--export_quantization_bit EXPORT_QUANTIZATION_BIT]
+2024-07-18 09:42:47 | ERROR | stderr |                [--export_quantization_dataset EXPORT_QUANTIZATION_DATASET]
+2024-07-18 09:42:47 | ERROR | stderr |                [--export_quantization_nsamples EXPORT_QUANTIZATION_NSAMPLES]
+2024-07-18 09:42:47 | ERROR | stderr |                [--export_quantization_maxlen EXPORT_QUANTIZATION_MAXLEN]
+2024-07-18 09:42:47 | ERROR | stderr |                [--export_legacy_format [EXPORT_LEGACY_FORMAT]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--export_hub_model_id EXPORT_HUB_MODEL_ID]
+2024-07-18 09:42:47 | ERROR | stderr |                [--print_param_status [PRINT_PARAM_STATUS]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--template TEMPLATE] [--dataset DATASET]
+2024-07-18 09:42:47 | ERROR | stderr |                [--dataset_dir DATASET_DIR] [--split SPLIT]
+2024-07-18 09:42:47 | ERROR | stderr |                [--cutoff_len CUTOFF_LEN]
+2024-07-18 09:42:47 | ERROR | stderr |                [--reserved_label_len RESERVED_LABEL_LEN]
+2024-07-18 09:42:47 | ERROR | stderr |                [--train_on_prompt [TRAIN_ON_PROMPT]] [--streaming [STREAMING]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--buffer_size BUFFER_SIZE]
+2024-07-18 09:42:47 | ERROR | stderr |                [--mix_strategy {concat,interleave_under,interleave_over}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--interleave_probs INTERLEAVE_PROBS]
+2024-07-18 09:42:47 | ERROR | stderr |                [--overwrite_cache [OVERWRITE_CACHE]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--preprocessing_num_workers PREPROCESSING_NUM_WORKERS]
+2024-07-18 09:42:47 | ERROR | stderr |                [--max_samples MAX_SAMPLES] [--eval_num_beams EVAL_NUM_BEAMS]
+2024-07-18 09:42:47 | ERROR | stderr |                [--ignore_pad_token_for_loss [IGNORE_PAD_TOKEN_FOR_LOSS]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--no_ignore_pad_token_for_loss] [--val_size VAL_SIZE]
+2024-07-18 09:42:47 | ERROR | stderr |                [--packing PACKING] [--tool_format TOOL_FORMAT]
+2024-07-18 09:42:47 | ERROR | stderr |                [--tokenized_path TOKENIZED_PATH]
+2024-07-18 09:42:47 | ERROR | stderr |                [--freeze_trainable_layers_ss FREEZE_TRAINABLE_LAYERS_SS]
+2024-07-18 09:42:47 | ERROR | stderr |                [--use_badam [USE_BADAM]] [--badam_mode {layer,ratio}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--badam_start_block BADAM_START_BLOCK]
+2024-07-18 09:42:47 | ERROR | stderr |                [--badam_switch_mode {ascending,descending,random,fixed}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--badam_switch_interval BADAM_SWITCH_INTERVAL]
+2024-07-18 09:42:47 | ERROR | stderr |                [--badam_update_ratio BADAM_UPDATE_RATIO]
+2024-07-18 09:42:47 | ERROR | stderr |                [--badam_mask_mode {adjacent,scatter}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--badam_verbose BADAM_VERBOSE] [--use_galore [USE_GALORE]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--galore_target GALORE_TARGET] [--galore_rank GALORE_RANK]
+2024-07-18 09:42:47 | ERROR | stderr |                [--galore_update_interval GALORE_UPDATE_INTERVAL]
+2024-07-18 09:42:47 | ERROR | stderr |                [--galore_scale GALORE_SCALE]
+2024-07-18 09:42:47 | ERROR | stderr |                [--galore_proj_type {std,reverse_std,right,left,full}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--galore_layerwise [GALORE_LAYERWISE]] [--pref_beta PREF_BETA]
+2024-07-18 09:42:47 | ERROR | stderr |                [--pref_ftx PREF_FTX]
+2024-07-18 09:42:47 | ERROR | stderr |                [--pref_loss {sigmoid,hinge,ipo,kto_pair,orpo,simpo}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--dpo_label_smoothing DPO_LABEL_SMOOTHING]
+2024-07-18 09:42:47 | ERROR | stderr |                [--kto_chosen_weight KTO_CHOSEN_WEIGHT]
+2024-07-18 09:42:47 | ERROR | stderr |                [--kto_rejected_weight KTO_REJECTED_WEIGHT]
+2024-07-18 09:42:47 | ERROR | stderr |                [--simpo_gamma SIMPO_GAMMA] [--ppo_buffer_size PPO_BUFFER_SIZE]
+2024-07-18 09:42:47 | ERROR | stderr |                [--ppo_epochs PPO_EPOCHS] [--ppo_score_norm [PPO_SCORE_NORM]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--ppo_target PPO_TARGET]
+2024-07-18 09:42:47 | ERROR | stderr |                [--ppo_whiten_rewards [PPO_WHITEN_REWARDS]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--ref_model REF_MODEL]
+2024-07-18 09:42:47 | ERROR | stderr |                [--ref_model_adapters REF_MODEL_ADAPTERS]
+2024-07-18 09:42:47 | ERROR | stderr |                [--ref_model_quantization_bit REF_MODEL_QUANTIZATION_BIT]
+2024-07-18 09:42:47 | ERROR | stderr |                [--reward_model REWARD_MODEL]
+2024-07-18 09:42:47 | ERROR | stderr |                [--reward_model_adapters REWARD_MODEL_ADAPTERS]
+2024-07-18 09:42:47 | ERROR | stderr |                [--reward_model_quantization_bit REWARD_MODEL_QUANTIZATION_BIT]
+2024-07-18 09:42:47 | ERROR | stderr |                [--reward_model_type {lora,full,api}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--additional_target ADDITIONAL_TARGET]
+2024-07-18 09:42:47 | ERROR | stderr |                [--lora_alpha LORA_ALPHA] [--lora_dropout LORA_DROPOUT]
+2024-07-18 09:42:47 | ERROR | stderr |                [--lora_rank LORA_RANK] [--lora_target LORA_TARGET]
+2024-07-18 09:42:47 | ERROR | stderr |                [--loraplus_lr_ratio LORAPLUS_LR_RATIO]
+2024-07-18 09:42:47 | ERROR | stderr |                [--loraplus_lr_embedding LORAPLUS_LR_EMBEDDING]
+2024-07-18 09:42:47 | ERROR | stderr |                [--use_rslora [USE_RSLORA]] [--use_dora [USE_DORA]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--pissa_init [PISSA_INIT]] [--pissa_iter PISSA_ITER]
+2024-07-18 09:42:47 | ERROR | stderr |                [--pissa_convert [PISSA_CONVERT]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--create_new_adapter [CREATE_NEW_ADAPTER]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--freeze_trainable_layers FREEZE_TRAINABLE_LAYERS]
+2024-07-18 09:42:47 | ERROR | stderr |                [--freeze_trainable_modules FREEZE_TRAINABLE_MODULES]
+2024-07-18 09:42:47 | ERROR | stderr |                [--freeze_extra_modules FREEZE_EXTRA_MODULES]
+2024-07-18 09:42:47 | ERROR | stderr |                [--pure_bf16 [PURE_BF16]] [--stage {pt,sft,rm,ppo,dpo,kto}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--finetuning_type {lora,freeze,full}]
+2024-07-18 09:42:47 | ERROR | stderr |                [--use_llama_pro [USE_LLAMA_PRO]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--freeze_vision_tower [FREEZE_VISION_TOWER]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--no_freeze_vision_tower]
+2024-07-18 09:42:47 | ERROR | stderr |                [--train_mm_proj_only [TRAIN_MM_PROJ_ONLY]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--plot_loss [PLOT_LOSS]] [--do_sample [DO_SAMPLE]]
+2024-07-18 09:42:47 | ERROR | stderr |                [--no_do_sample] [--temperature TEMPERATURE] [--top_p TOP_P]
+2024-07-18 09:42:47 | ERROR | stderr |                [--top_k TOP_K] [--num_beams NUM_BEAMS]
+2024-07-18 09:42:47 | ERROR | stderr |                [--max_length MAX_LENGTH] [--max_new_tokens MAX_NEW_TOKENS]
+2024-07-18 09:42:47 | ERROR | stderr |                [--repetition_penalty REPETITION_PENALTY]
+2024-07-18 09:42:47 | ERROR | stderr |                [--length_penalty LENGTH_PENALTY]
+2024-07-18 09:42:47 | ERROR | stderr |                [--default_system DEFAULT_SYSTEM]
+2024-07-18 09:42:47 | ERROR | stderr | main.py: error: the following arguments are required: --model_name_or_path
+2024-07-18 09:42:58 | ERROR | stderr | usage: main.py [-h] --model_name_or_path MODEL_NAME_OR_PATH
+2024-07-18 09:42:58 | ERROR | stderr |                [--adapter_name_or_path ADAPTER_NAME_OR_PATH]
+2024-07-18 09:42:58 | ERROR | stderr |                [--adapter_folder ADAPTER_FOLDER] [--cache_dir CACHE_DIR]
+2024-07-18 09:42:58 | ERROR | stderr |                [--use_fast_tokenizer [USE_FAST_TOKENIZER]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--no_use_fast_tokenizer] [--resize_vocab [RESIZE_VOCAB]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--split_special_tokens [SPLIT_SPECIAL_TOKENS]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--new_special_tokens NEW_SPECIAL_TOKENS]
+2024-07-18 09:42:58 | ERROR | stderr |                [--model_revision MODEL_REVISION]
+2024-07-18 09:42:58 | ERROR | stderr |                [--low_cpu_mem_usage [LOW_CPU_MEM_USAGE]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--no_low_cpu_mem_usage]
+2024-07-18 09:42:58 | ERROR | stderr |                [--quantization_method {bitsandbytes,hqq,eetq}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--quantization_bit QUANTIZATION_BIT]
+2024-07-18 09:42:58 | ERROR | stderr |                [--quantization_type {fp4,nf4}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--double_quantization [DOUBLE_QUANTIZATION]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--no_double_quantization] [--quantization_device_map {auto}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--rope_scaling {linear,dynamic}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--flash_attn {auto,disabled,sdpa,fa2}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--shift_attn [SHIFT_ATTN]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--mixture_of_depths {convert,load}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--use_unsloth [USE_UNSLOTH]] [--visual_inputs [VISUAL_INPUTS]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--moe_aux_loss_coef MOE_AUX_LOSS_COEF]
+2024-07-18 09:42:58 | ERROR | stderr |                [--disable_gradient_checkpointing [DISABLE_GRADIENT_CHECKPOINTING]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--upcast_layernorm [UPCAST_LAYERNORM]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--upcast_lmhead_output [UPCAST_LMHEAD_OUTPUT]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--train_from_scratch [TRAIN_FROM_SCRATCH]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--infer_backend {huggingface,vllm}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--vllm_maxlen VLLM_MAXLEN] [--vllm_gpu_util VLLM_GPU_UTIL]
+2024-07-18 09:42:58 | ERROR | stderr |                [--vllm_enforce_eager [VLLM_ENFORCE_EAGER]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--vllm_max_lora_rank VLLM_MAX_LORA_RANK]
+2024-07-18 09:42:58 | ERROR | stderr |                [--offload_folder OFFLOAD_FOLDER] [--use_cache [USE_CACHE]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--no_use_cache]
+2024-07-18 09:42:58 | ERROR | stderr |                [--infer_dtype {auto,float16,bfloat16,float32}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--hf_hub_token HF_HUB_TOKEN] [--ms_hub_token MS_HUB_TOKEN]
+2024-07-18 09:42:58 | ERROR | stderr |                [--export_dir EXPORT_DIR] [--export_size EXPORT_SIZE]
+2024-07-18 09:42:58 | ERROR | stderr |                [--export_device {cpu,auto}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--export_quantization_bit EXPORT_QUANTIZATION_BIT]
+2024-07-18 09:42:58 | ERROR | stderr |                [--export_quantization_dataset EXPORT_QUANTIZATION_DATASET]
+2024-07-18 09:42:58 | ERROR | stderr |                [--export_quantization_nsamples EXPORT_QUANTIZATION_NSAMPLES]
+2024-07-18 09:42:58 | ERROR | stderr |                [--export_quantization_maxlen EXPORT_QUANTIZATION_MAXLEN]
+2024-07-18 09:42:58 | ERROR | stderr |                [--export_legacy_format [EXPORT_LEGACY_FORMAT]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--export_hub_model_id EXPORT_HUB_MODEL_ID]
+2024-07-18 09:42:58 | ERROR | stderr |                [--print_param_status [PRINT_PARAM_STATUS]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--template TEMPLATE] [--dataset DATASET]
+2024-07-18 09:42:58 | ERROR | stderr |                [--dataset_dir DATASET_DIR] [--split SPLIT]
+2024-07-18 09:42:58 | ERROR | stderr |                [--cutoff_len CUTOFF_LEN]
+2024-07-18 09:42:58 | ERROR | stderr |                [--reserved_label_len RESERVED_LABEL_LEN]
+2024-07-18 09:42:58 | ERROR | stderr |                [--train_on_prompt [TRAIN_ON_PROMPT]] [--streaming [STREAMING]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--buffer_size BUFFER_SIZE]
+2024-07-18 09:42:58 | ERROR | stderr |                [--mix_strategy {concat,interleave_under,interleave_over}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--interleave_probs INTERLEAVE_PROBS]
+2024-07-18 09:42:58 | ERROR | stderr |                [--overwrite_cache [OVERWRITE_CACHE]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--preprocessing_num_workers PREPROCESSING_NUM_WORKERS]
+2024-07-18 09:42:58 | ERROR | stderr |                [--max_samples MAX_SAMPLES] [--eval_num_beams EVAL_NUM_BEAMS]
+2024-07-18 09:42:58 | ERROR | stderr |                [--ignore_pad_token_for_loss [IGNORE_PAD_TOKEN_FOR_LOSS]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--no_ignore_pad_token_for_loss] [--val_size VAL_SIZE]
+2024-07-18 09:42:58 | ERROR | stderr |                [--packing PACKING] [--tool_format TOOL_FORMAT]
+2024-07-18 09:42:58 | ERROR | stderr |                [--tokenized_path TOKENIZED_PATH]
+2024-07-18 09:42:58 | ERROR | stderr |                [--freeze_trainable_layers_ss FREEZE_TRAINABLE_LAYERS_SS]
+2024-07-18 09:42:58 | ERROR | stderr |                [--use_badam [USE_BADAM]] [--badam_mode {layer,ratio}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--badam_start_block BADAM_START_BLOCK]
+2024-07-18 09:42:58 | ERROR | stderr |                [--badam_switch_mode {ascending,descending,random,fixed}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--badam_switch_interval BADAM_SWITCH_INTERVAL]
+2024-07-18 09:42:58 | ERROR | stderr |                [--badam_update_ratio BADAM_UPDATE_RATIO]
+2024-07-18 09:42:58 | ERROR | stderr |                [--badam_mask_mode {adjacent,scatter}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--badam_verbose BADAM_VERBOSE] [--use_galore [USE_GALORE]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--galore_target GALORE_TARGET] [--galore_rank GALORE_RANK]
+2024-07-18 09:42:58 | ERROR | stderr |                [--galore_update_interval GALORE_UPDATE_INTERVAL]
+2024-07-18 09:42:58 | ERROR | stderr |                [--galore_scale GALORE_SCALE]
+2024-07-18 09:42:58 | ERROR | stderr |                [--galore_proj_type {std,reverse_std,right,left,full}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--galore_layerwise [GALORE_LAYERWISE]] [--pref_beta PREF_BETA]
+2024-07-18 09:42:58 | ERROR | stderr |                [--pref_ftx PREF_FTX]
+2024-07-18 09:42:58 | ERROR | stderr |                [--pref_loss {sigmoid,hinge,ipo,kto_pair,orpo,simpo}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--dpo_label_smoothing DPO_LABEL_SMOOTHING]
+2024-07-18 09:42:58 | ERROR | stderr |                [--kto_chosen_weight KTO_CHOSEN_WEIGHT]
+2024-07-18 09:42:58 | ERROR | stderr |                [--kto_rejected_weight KTO_REJECTED_WEIGHT]
+2024-07-18 09:42:58 | ERROR | stderr |                [--simpo_gamma SIMPO_GAMMA] [--ppo_buffer_size PPO_BUFFER_SIZE]
+2024-07-18 09:42:58 | ERROR | stderr |                [--ppo_epochs PPO_EPOCHS] [--ppo_score_norm [PPO_SCORE_NORM]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--ppo_target PPO_TARGET]
+2024-07-18 09:42:58 | ERROR | stderr |                [--ppo_whiten_rewards [PPO_WHITEN_REWARDS]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--ref_model REF_MODEL]
+2024-07-18 09:42:58 | ERROR | stderr |                [--ref_model_adapters REF_MODEL_ADAPTERS]
+2024-07-18 09:42:58 | ERROR | stderr |                [--ref_model_quantization_bit REF_MODEL_QUANTIZATION_BIT]
+2024-07-18 09:42:58 | ERROR | stderr |                [--reward_model REWARD_MODEL]
+2024-07-18 09:42:58 | ERROR | stderr |                [--reward_model_adapters REWARD_MODEL_ADAPTERS]
+2024-07-18 09:42:58 | ERROR | stderr |                [--reward_model_quantization_bit REWARD_MODEL_QUANTIZATION_BIT]
+2024-07-18 09:42:58 | ERROR | stderr |                [--reward_model_type {lora,full,api}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--additional_target ADDITIONAL_TARGET]
+2024-07-18 09:42:58 | ERROR | stderr |                [--lora_alpha LORA_ALPHA] [--lora_dropout LORA_DROPOUT]
+2024-07-18 09:42:58 | ERROR | stderr |                [--lora_rank LORA_RANK] [--lora_target LORA_TARGET]
+2024-07-18 09:42:58 | ERROR | stderr |                [--loraplus_lr_ratio LORAPLUS_LR_RATIO]
+2024-07-18 09:42:58 | ERROR | stderr |                [--loraplus_lr_embedding LORAPLUS_LR_EMBEDDING]
+2024-07-18 09:42:58 | ERROR | stderr |                [--use_rslora [USE_RSLORA]] [--use_dora [USE_DORA]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--pissa_init [PISSA_INIT]] [--pissa_iter PISSA_ITER]
+2024-07-18 09:42:58 | ERROR | stderr |                [--pissa_convert [PISSA_CONVERT]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--create_new_adapter [CREATE_NEW_ADAPTER]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--freeze_trainable_layers FREEZE_TRAINABLE_LAYERS]
+2024-07-18 09:42:58 | ERROR | stderr |                [--freeze_trainable_modules FREEZE_TRAINABLE_MODULES]
+2024-07-18 09:42:58 | ERROR | stderr |                [--freeze_extra_modules FREEZE_EXTRA_MODULES]
+2024-07-18 09:42:58 | ERROR | stderr |                [--pure_bf16 [PURE_BF16]] [--stage {pt,sft,rm,ppo,dpo,kto}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--finetuning_type {lora,freeze,full}]
+2024-07-18 09:42:58 | ERROR | stderr |                [--use_llama_pro [USE_LLAMA_PRO]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--freeze_vision_tower [FREEZE_VISION_TOWER]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--no_freeze_vision_tower]
+2024-07-18 09:42:58 | ERROR | stderr |                [--train_mm_proj_only [TRAIN_MM_PROJ_ONLY]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--plot_loss [PLOT_LOSS]] [--do_sample [DO_SAMPLE]]
+2024-07-18 09:42:58 | ERROR | stderr |                [--no_do_sample] [--temperature TEMPERATURE] [--top_p TOP_P]
+2024-07-18 09:42:58 | ERROR | stderr |                [--top_k TOP_K] [--num_beams NUM_BEAMS]
+2024-07-18 09:42:58 | ERROR | stderr |                [--max_length MAX_LENGTH] [--max_new_tokens MAX_NEW_TOKENS]
+2024-07-18 09:42:58 | ERROR | stderr |                [--repetition_penalty REPETITION_PENALTY]
+2024-07-18 09:42:58 | ERROR | stderr |                [--length_penalty LENGTH_PENALTY]
+2024-07-18 09:42:58 | ERROR | stderr |                [--default_system DEFAULT_SYSTEM]
+2024-07-18 09:42:58 | ERROR | stderr | main.py: error: the following arguments are required: --model_name_or_path
+2024-07-18 09:43:11 | ERROR | stderr | usage: main.py [-h] --model_name_or_path MODEL_NAME_OR_PATH
+2024-07-18 09:43:11 | ERROR | stderr |                [--adapter_name_or_path ADAPTER_NAME_OR_PATH]
+2024-07-18 09:43:11 | ERROR | stderr |                [--adapter_folder ADAPTER_FOLDER] [--cache_dir CACHE_DIR]
+2024-07-18 09:43:11 | ERROR | stderr |                [--use_fast_tokenizer [USE_FAST_TOKENIZER]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--no_use_fast_tokenizer] [--resize_vocab [RESIZE_VOCAB]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--split_special_tokens [SPLIT_SPECIAL_TOKENS]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--new_special_tokens NEW_SPECIAL_TOKENS]
+2024-07-18 09:43:11 | ERROR | stderr |                [--model_revision MODEL_REVISION]
+2024-07-18 09:43:11 | ERROR | stderr |                [--low_cpu_mem_usage [LOW_CPU_MEM_USAGE]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--no_low_cpu_mem_usage]
+2024-07-18 09:43:11 | ERROR | stderr |                [--quantization_method {bitsandbytes,hqq,eetq}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--quantization_bit QUANTIZATION_BIT]
+2024-07-18 09:43:11 | ERROR | stderr |                [--quantization_type {fp4,nf4}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--double_quantization [DOUBLE_QUANTIZATION]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--no_double_quantization] [--quantization_device_map {auto}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--rope_scaling {linear,dynamic}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--flash_attn {auto,disabled,sdpa,fa2}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--shift_attn [SHIFT_ATTN]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--mixture_of_depths {convert,load}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--use_unsloth [USE_UNSLOTH]] [--visual_inputs [VISUAL_INPUTS]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--moe_aux_loss_coef MOE_AUX_LOSS_COEF]
+2024-07-18 09:43:11 | ERROR | stderr |                [--disable_gradient_checkpointing [DISABLE_GRADIENT_CHECKPOINTING]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--upcast_layernorm [UPCAST_LAYERNORM]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--upcast_lmhead_output [UPCAST_LMHEAD_OUTPUT]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--train_from_scratch [TRAIN_FROM_SCRATCH]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--infer_backend {huggingface,vllm}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--vllm_maxlen VLLM_MAXLEN] [--vllm_gpu_util VLLM_GPU_UTIL]
+2024-07-18 09:43:11 | ERROR | stderr |                [--vllm_enforce_eager [VLLM_ENFORCE_EAGER]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--vllm_max_lora_rank VLLM_MAX_LORA_RANK]
+2024-07-18 09:43:11 | ERROR | stderr |                [--offload_folder OFFLOAD_FOLDER] [--use_cache [USE_CACHE]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--no_use_cache]
+2024-07-18 09:43:11 | ERROR | stderr |                [--infer_dtype {auto,float16,bfloat16,float32}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--hf_hub_token HF_HUB_TOKEN] [--ms_hub_token MS_HUB_TOKEN]
+2024-07-18 09:43:11 | ERROR | stderr |                [--export_dir EXPORT_DIR] [--export_size EXPORT_SIZE]
+2024-07-18 09:43:11 | ERROR | stderr |                [--export_device {cpu,auto}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--export_quantization_bit EXPORT_QUANTIZATION_BIT]
+2024-07-18 09:43:11 | ERROR | stderr |                [--export_quantization_dataset EXPORT_QUANTIZATION_DATASET]
+2024-07-18 09:43:11 | ERROR | stderr |                [--export_quantization_nsamples EXPORT_QUANTIZATION_NSAMPLES]
+2024-07-18 09:43:11 | ERROR | stderr |                [--export_quantization_maxlen EXPORT_QUANTIZATION_MAXLEN]
+2024-07-18 09:43:11 | ERROR | stderr |                [--export_legacy_format [EXPORT_LEGACY_FORMAT]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--export_hub_model_id EXPORT_HUB_MODEL_ID]
+2024-07-18 09:43:11 | ERROR | stderr |                [--print_param_status [PRINT_PARAM_STATUS]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--template TEMPLATE] [--dataset DATASET]
+2024-07-18 09:43:11 | ERROR | stderr |                [--dataset_dir DATASET_DIR] [--split SPLIT]
+2024-07-18 09:43:11 | ERROR | stderr |                [--cutoff_len CUTOFF_LEN]
+2024-07-18 09:43:11 | ERROR | stderr |                [--reserved_label_len RESERVED_LABEL_LEN]
+2024-07-18 09:43:11 | ERROR | stderr |                [--train_on_prompt [TRAIN_ON_PROMPT]] [--streaming [STREAMING]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--buffer_size BUFFER_SIZE]
+2024-07-18 09:43:11 | ERROR | stderr |                [--mix_strategy {concat,interleave_under,interleave_over}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--interleave_probs INTERLEAVE_PROBS]
+2024-07-18 09:43:11 | ERROR | stderr |                [--overwrite_cache [OVERWRITE_CACHE]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--preprocessing_num_workers PREPROCESSING_NUM_WORKERS]
+2024-07-18 09:43:11 | ERROR | stderr |                [--max_samples MAX_SAMPLES] [--eval_num_beams EVAL_NUM_BEAMS]
+2024-07-18 09:43:11 | ERROR | stderr |                [--ignore_pad_token_for_loss [IGNORE_PAD_TOKEN_FOR_LOSS]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--no_ignore_pad_token_for_loss] [--val_size VAL_SIZE]
+2024-07-18 09:43:11 | ERROR | stderr |                [--packing PACKING] [--tool_format TOOL_FORMAT]
+2024-07-18 09:43:11 | ERROR | stderr |                [--tokenized_path TOKENIZED_PATH]
+2024-07-18 09:43:11 | ERROR | stderr |                [--freeze_trainable_layers_ss FREEZE_TRAINABLE_LAYERS_SS]
+2024-07-18 09:43:11 | ERROR | stderr |                [--use_badam [USE_BADAM]] [--badam_mode {layer,ratio}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--badam_start_block BADAM_START_BLOCK]
+2024-07-18 09:43:11 | ERROR | stderr |                [--badam_switch_mode {ascending,descending,random,fixed}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--badam_switch_interval BADAM_SWITCH_INTERVAL]
+2024-07-18 09:43:11 | ERROR | stderr |                [--badam_update_ratio BADAM_UPDATE_RATIO]
+2024-07-18 09:43:11 | ERROR | stderr |                [--badam_mask_mode {adjacent,scatter}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--badam_verbose BADAM_VERBOSE] [--use_galore [USE_GALORE]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--galore_target GALORE_TARGET] [--galore_rank GALORE_RANK]
+2024-07-18 09:43:11 | ERROR | stderr |                [--galore_update_interval GALORE_UPDATE_INTERVAL]
+2024-07-18 09:43:11 | ERROR | stderr |                [--galore_scale GALORE_SCALE]
+2024-07-18 09:43:11 | ERROR | stderr |                [--galore_proj_type {std,reverse_std,right,left,full}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--galore_layerwise [GALORE_LAYERWISE]] [--pref_beta PREF_BETA]
+2024-07-18 09:43:11 | ERROR | stderr |                [--pref_ftx PREF_FTX]
+2024-07-18 09:43:11 | ERROR | stderr |                [--pref_loss {sigmoid,hinge,ipo,kto_pair,orpo,simpo}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--dpo_label_smoothing DPO_LABEL_SMOOTHING]
+2024-07-18 09:43:11 | ERROR | stderr |                [--kto_chosen_weight KTO_CHOSEN_WEIGHT]
+2024-07-18 09:43:11 | ERROR | stderr |                [--kto_rejected_weight KTO_REJECTED_WEIGHT]
+2024-07-18 09:43:11 | ERROR | stderr |                [--simpo_gamma SIMPO_GAMMA] [--ppo_buffer_size PPO_BUFFER_SIZE]
+2024-07-18 09:43:11 | ERROR | stderr |                [--ppo_epochs PPO_EPOCHS] [--ppo_score_norm [PPO_SCORE_NORM]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--ppo_target PPO_TARGET]
+2024-07-18 09:43:11 | ERROR | stderr |                [--ppo_whiten_rewards [PPO_WHITEN_REWARDS]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--ref_model REF_MODEL]
+2024-07-18 09:43:11 | ERROR | stderr |                [--ref_model_adapters REF_MODEL_ADAPTERS]
+2024-07-18 09:43:11 | ERROR | stderr |                [--ref_model_quantization_bit REF_MODEL_QUANTIZATION_BIT]
+2024-07-18 09:43:11 | ERROR | stderr |                [--reward_model REWARD_MODEL]
+2024-07-18 09:43:11 | ERROR | stderr |                [--reward_model_adapters REWARD_MODEL_ADAPTERS]
+2024-07-18 09:43:11 | ERROR | stderr |                [--reward_model_quantization_bit REWARD_MODEL_QUANTIZATION_BIT]
+2024-07-18 09:43:11 | ERROR | stderr |                [--reward_model_type {lora,full,api}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--additional_target ADDITIONAL_TARGET]
+2024-07-18 09:43:11 | ERROR | stderr |                [--lora_alpha LORA_ALPHA] [--lora_dropout LORA_DROPOUT]
+2024-07-18 09:43:11 | ERROR | stderr |                [--lora_rank LORA_RANK] [--lora_target LORA_TARGET]
+2024-07-18 09:43:11 | ERROR | stderr |                [--loraplus_lr_ratio LORAPLUS_LR_RATIO]
+2024-07-18 09:43:11 | ERROR | stderr |                [--loraplus_lr_embedding LORAPLUS_LR_EMBEDDING]
+2024-07-18 09:43:11 | ERROR | stderr |                [--use_rslora [USE_RSLORA]] [--use_dora [USE_DORA]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--pissa_init [PISSA_INIT]] [--pissa_iter PISSA_ITER]
+2024-07-18 09:43:11 | ERROR | stderr |                [--pissa_convert [PISSA_CONVERT]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--create_new_adapter [CREATE_NEW_ADAPTER]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--freeze_trainable_layers FREEZE_TRAINABLE_LAYERS]
+2024-07-18 09:43:11 | ERROR | stderr |                [--freeze_trainable_modules FREEZE_TRAINABLE_MODULES]
+2024-07-18 09:43:11 | ERROR | stderr |                [--freeze_extra_modules FREEZE_EXTRA_MODULES]
+2024-07-18 09:43:11 | ERROR | stderr |                [--pure_bf16 [PURE_BF16]] [--stage {pt,sft,rm,ppo,dpo,kto}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--finetuning_type {lora,freeze,full}]
+2024-07-18 09:43:11 | ERROR | stderr |                [--use_llama_pro [USE_LLAMA_PRO]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--freeze_vision_tower [FREEZE_VISION_TOWER]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--no_freeze_vision_tower]
+2024-07-18 09:43:11 | ERROR | stderr |                [--train_mm_proj_only [TRAIN_MM_PROJ_ONLY]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--plot_loss [PLOT_LOSS]] [--do_sample [DO_SAMPLE]]
+2024-07-18 09:43:11 | ERROR | stderr |                [--no_do_sample] [--temperature TEMPERATURE] [--top_p TOP_P]
+2024-07-18 09:43:11 | ERROR | stderr |                [--top_k TOP_K] [--num_beams NUM_BEAMS]
+2024-07-18 09:43:11 | ERROR | stderr |                [--max_length MAX_LENGTH] [--max_new_tokens MAX_NEW_TOKENS]
+2024-07-18 09:43:11 | ERROR | stderr |                [--repetition_penalty REPETITION_PENALTY]
+2024-07-18 09:43:11 | ERROR | stderr |                [--length_penalty LENGTH_PENALTY]
+2024-07-18 09:43:11 | ERROR | stderr |                [--default_system DEFAULT_SYSTEM]
+2024-07-18 09:43:11 | ERROR | stderr | main.py: error: the following arguments are required: --model_name_or_path
+2024-07-18 09:50:34 | INFO | stdout | {'model_name_or_path': '/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', 'adapter_name_or_path': None, 'adapter_folder': None, 'cache_dir': None, 'use_fast_tokenizer': True, 'resize_vocab': False, 'split_special_tokens': False, 'new_special_tokens': None, 'model_revision': 'main', 'low_cpu_mem_usage': True, 'quantization_method': 'bitsandbytes', 'quantization_bit': None, 'quantization_type': 'nf4', 'double_quantization': True, 'quantization_device_map': None, 'rope_scaling': None, 'flash_attn': 'auto', 'shift_attn': False, 'mixture_of_depths': None, 'use_unsloth': False, 'visual_inputs': False, 'moe_aux_loss_coef': None, 'disable_gradient_checkpointing': False, 'upcast_layernorm': False, 'upcast_lmhead_output': False, 'train_from_scratch': False, 'infer_backend': 'vllm', 'vllm_maxlen': 8192, 'vllm_gpu_util': 0.9, 'vllm_enforce_eager': False, 'vllm_max_lora_rank': 32, 'offload_folder': 'offload', 'use_cache': True, 'infer_dtype': 'auto', 'hf_hub_token': None, 'ms_hub_token': None, 'export_dir': None, 'export_size': 1, 'export_device': 'cpu', 'export_quantization_bit': None, 'export_quantization_dataset': None, 'export_quantization_nsamples': 128, 'export_quantization_maxlen': 1024, 'export_legacy_format': False, 'export_hub_model_id': None, 'print_param_status': False}
+2024-07-18 09:50:34 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:50:34 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/main.py", line 29, in <module>
+2024-07-18 09:50:34 | ERROR | stderr |     ans = get_rouge(**model_args)
+2024-07-18 09:50:34 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/test_rrag/test_r.py", line 7, in get_rouge
+2024-07-18 09:50:34 | ERROR | stderr |     data_path = kwargs["data_pth"]
+2024-07-18 09:50:34 | ERROR | stderr | KeyError: 'data_pth'
+2024-07-18 09:52:00 | INFO | stdout | {'model_name_or_path': '/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', 'adapter_name_or_path': None, 'data_pth': None, 'adapter_folder': None, 'cache_dir': None, 'use_fast_tokenizer': True, 'resize_vocab': False, 'split_special_tokens': False, 'new_special_tokens': None, 'model_revision': 'main', 'low_cpu_mem_usage': True, 'quantization_method': 'bitsandbytes', 'quantization_bit': None, 'quantization_type': 'nf4', 'double_quantization': True, 'quantization_device_map': None, 'rope_scaling': None, 'flash_attn': 'auto', 'shift_attn': False, 'mixture_of_depths': None, 'use_unsloth': False, 'visual_inputs': False, 'moe_aux_loss_coef': None, 'disable_gradient_checkpointing': False, 'upcast_layernorm': False, 'upcast_lmhead_output': False, 'train_from_scratch': False, 'infer_backend': 'vllm', 'vllm_maxlen': 8192, 'vllm_gpu_util': 0.9, 'vllm_enforce_eager': False, 'vllm_max_lora_rank': 32, 'offload_folder': 'offload', 'use_cache': True, 'infer_dtype': 'auto', 'hf_hub_token': None, 'ms_hub_token': None, 'export_dir': None, 'export_size': 1, 'export_device': 'cpu', 'export_quantization_bit': None, 'export_quantization_dataset': None, 'export_quantization_nsamples': 128, 'export_quantization_maxlen': 1024, 'export_legacy_format': False, 'export_hub_model_id': None, 'print_param_status': False}
+2024-07-18 09:52:00 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:52:00 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/main.py", line 29, in <module>
+2024-07-18 09:52:00 | ERROR | stderr |     ans = get_rouge(**model_args)
+2024-07-18 09:52:00 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/test_rrag/test_r.py", line 8, in get_rouge
+2024-07-18 09:52:00 | ERROR | stderr |     data = load_data(data_pth=data_path)
+2024-07-18 09:52:00 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/data/load.py", line 6, in load_data
+2024-07-18 09:52:00 | ERROR | stderr |     with open(data_pth, 'r', encoding='utf-8') as R:
+2024-07-18 09:52:00 | ERROR | stderr | TypeError: expected str, bytes or os.PathLike object, not NoneType
+2024-07-18 09:53:45 | INFO | stdout | {'model_name_or_path': '/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', 'adapter_name_or_path': None, 'data_pth': '/home/zhangyh/rag_dataset/wikiQA_gpt.json', 'adapter_folder': None, 'cache_dir': None, 'use_fast_tokenizer': True, 'resize_vocab': False, 'split_special_tokens': False, 'new_special_tokens': None, 'model_revision': 'main', 'low_cpu_mem_usage': True, 'quantization_method': 'bitsandbytes', 'quantization_bit': None, 'quantization_type': 'nf4', 'double_quantization': True, 'quantization_device_map': None, 'rope_scaling': None, 'flash_attn': 'auto', 'shift_attn': False, 'mixture_of_depths': None, 'use_unsloth': False, 'visual_inputs': False, 'moe_aux_loss_coef': None, 'disable_gradient_checkpointing': False, 'upcast_layernorm': False, 'upcast_lmhead_output': False, 'train_from_scratch': False, 'infer_backend': 'vllm', 'vllm_maxlen': 8192, 'vllm_gpu_util': 0.9, 'vllm_enforce_eager': False, 'vllm_max_lora_rank': 32, 'offload_folder': 'offload', 'use_cache': True, 'infer_dtype': 'auto', 'hf_hub_token': None, 'ms_hub_token': None, 'export_dir': None, 'export_size': 1, 'export_device': 'cpu', 'export_quantization_bit': None, 'export_quantization_dataset': None, 'export_quantization_nsamples': 128, 'export_quantization_maxlen': 1024, 'export_legacy_format': False, 'export_hub_model_id': None, 'print_param_status': False}
+2024-07-18 09:53:45 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:53:45 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/main.py", line 29, in <module>
+2024-07-18 09:53:45 | ERROR | stderr |     ans = get_rouge(**model_args)
+2024-07-18 09:53:45 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/test_rrag/test_r.py", line 12, in get_rouge
+2024-07-18 09:53:45 | ERROR | stderr |     result = generate_data(**kwargs)
+2024-07-18 09:53:45 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/generator/generate.py", line 6, in generate_data
+2024-07-18 09:53:45 | ERROR | stderr |     model_path = kwargs["model_path"]
+2024-07-18 09:53:45 | ERROR | stderr | KeyError: 'model_path'
+2024-07-18 09:54:26 | INFO | stdout | {'model_name_or_path': '/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', 'adapter_name_or_path': None, 'data_pth': '/home/zhangyh/rag_dataset/wikiQA_gpt.json', 'adapter_folder': None, 'cache_dir': None, 'use_fast_tokenizer': True, 'resize_vocab': False, 'split_special_tokens': False, 'new_special_tokens': None, 'model_revision': 'main', 'low_cpu_mem_usage': True, 'quantization_method': 'bitsandbytes', 'quantization_bit': None, 'quantization_type': 'nf4', 'double_quantization': True, 'quantization_device_map': None, 'rope_scaling': None, 'flash_attn': 'auto', 'shift_attn': False, 'mixture_of_depths': None, 'use_unsloth': False, 'visual_inputs': False, 'moe_aux_loss_coef': None, 'disable_gradient_checkpointing': False, 'upcast_layernorm': False, 'upcast_lmhead_output': False, 'train_from_scratch': False, 'infer_backend': 'vllm', 'vllm_maxlen': 8192, 'vllm_gpu_util': 0.9, 'vllm_enforce_eager': False, 'vllm_max_lora_rank': 32, 'offload_folder': 'offload', 'use_cache': True, 'infer_dtype': 'auto', 'hf_hub_token': None, 'ms_hub_token': None, 'export_dir': None, 'export_size': 1, 'export_device': 'cpu', 'export_quantization_bit': None, 'export_quantization_dataset': None, 'export_quantization_nsamples': 128, 'export_quantization_maxlen': 1024, 'export_legacy_format': False, 'export_hub_model_id': None, 'print_param_status': False}
+2024-07-18 09:54:26 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 09:54:26 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/main.py", line 29, in <module>
+2024-07-18 09:54:26 | ERROR | stderr |     ans = get_rouge(**model_args)
+2024-07-18 09:54:26 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/test_rrag/test_r.py", line 12, in get_rouge
+2024-07-18 09:54:26 | ERROR | stderr |     result = generate_data(**kwargs)
+2024-07-18 09:54:26 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/generator/generate.py", line 7, in generate_data
+2024-07-18 09:54:26 | ERROR | stderr |     max_bs = kwargs["max_bs"]
+2024-07-18 09:54:26 | ERROR | stderr | KeyError: 'max_bs'
+2024-07-18 09:56:07 | INFO | stdout | {'model_name_or_path': '/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', 'adapter_name_or_path': None, 'data_pth': '/home/zhangyh/rag_dataset/wikiQA_gpt.json', 'max_bs': '512', 'adapter_folder': None, 'cache_dir': None, 'use_fast_tokenizer': True, 'resize_vocab': False, 'split_special_tokens': False, 'new_special_tokens': None, 'model_revision': 'main', 'low_cpu_mem_usage': True, 'quantization_method': 'bitsandbytes', 'quantization_bit': None, 'quantization_type': 'nf4', 'double_quantization': True, 'quantization_device_map': None, 'rope_scaling': None, 'flash_attn': 'auto', 'shift_attn': False, 'mixture_of_depths': None, 'use_unsloth': False, 'visual_inputs': False, 'moe_aux_loss_coef': None, 'disable_gradient_checkpointing': False, 'upcast_layernorm': False, 'upcast_lmhead_output': False, 'train_from_scratch': False, 'infer_backend': 'vllm', 'vllm_maxlen': 8192, 'vllm_gpu_util': 0.9, 'vllm_enforce_eager': False, 'vllm_max_lora_rank': 32, 'offload_folder': 'offload', 'use_cache': True, 'infer_dtype': 'auto', 'hf_hub_token': None, 'ms_hub_token': None, 'export_dir': None, 'export_size': 1, 'export_device': 'cpu', 'export_quantization_bit': None, 'export_quantization_dataset': None, 'export_quantization_nsamples': 128, 'export_quantization_maxlen': 1024, 'export_legacy_format': False, 'export_hub_model_id': None, 'print_param_status': False}
+2024-07-18 09:56:07 | INFO | stdout | INFO 07-18 09:56:07 config.py:695] Defaulting to use mp for distributed inference
+2024-07-18 09:56:07 | INFO | stdout | INFO 07-18 09:56:07 llm_engine.py:174] Initializing an LLM engine (v0.5.2) with config: model='/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', speculative_config=None, tokenizer='/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1, use_v2_block_manager=False, enable_prefix_caching=False)
+2024-07-18 09:56:07 | INFO | stdout | INFO 07-18 09:56:07 custom_cache_manager.py:17] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m Process VllmWorkerProcess:
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m Traceback (most recent call last):
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     self.run()
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     worker = worker_factory()
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     prop = get_device_properties(device)
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m     raise RuntimeError(
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45533)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m Process VllmWorkerProcess:
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m Traceback (most recent call last):
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     self.run()
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     worker = worker_factory()
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     prop = get_device_properties(device)
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m     raise RuntimeError(
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45532)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m Process VllmWorkerProcess:
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m Traceback (most recent call last):
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     self.run()
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     worker = worker_factory()
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     prop = get_device_properties(device)
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m     raise RuntimeError(
+2024-07-18 09:56:07 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=45531)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 09:56:07 | INFO | stdout | ERROR 07-18 09:56:07 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 45531 died, exit code: 1
+2024-07-18 09:56:07 | INFO | stdout | ERROR 07-18 09:56:07 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 45532 died, exit code: 1
+2024-07-18 09:56:07 | INFO | stdout | ERROR 07-18 09:56:07 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 45533 died, exit code: 1
+2024-07-18 09:56:07 | INFO | stdout | INFO 07-18 09:56:07 multiproc_worker_utils.py:123] Killing local vLLM worker processes
+2024-07-18 09:58:11 | INFO | stdout | {'model_name_or_path': '/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', 'adapter_name_or_path': None, 'data_pth': '/home/zhangyh/rag_dataset/wikiQA_gpt.json', 'max_bs': '512', 'adapter_folder': None, 'cache_dir': None, 'use_fast_tokenizer': True, 'resize_vocab': False, 'split_special_tokens': False, 'new_special_tokens': None, 'model_revision': 'main', 'low_cpu_mem_usage': True, 'quantization_method': 'bitsandbytes', 'quantization_bit': None, 'quantization_type': 'nf4', 'double_quantization': True, 'quantization_device_map': None, 'rope_scaling': None, 'flash_attn': 'auto', 'shift_attn': False, 'mixture_of_depths': None, 'use_unsloth': False, 'visual_inputs': False, 'moe_aux_loss_coef': None, 'disable_gradient_checkpointing': False, 'upcast_layernorm': False, 'upcast_lmhead_output': False, 'train_from_scratch': False, 'infer_backend': 'vllm', 'vllm_maxlen': 8192, 'vllm_gpu_util': 0.9, 'vllm_enforce_eager': False, 'vllm_max_lora_rank': 32, 'offload_folder': 'offload', 'use_cache': True, 'infer_dtype': 'auto', 'hf_hub_token': None, 'ms_hub_token': None, 'export_dir': None, 'export_size': 1, 'export_device': 'cpu', 'export_quantization_bit': None, 'export_quantization_dataset': None, 'export_quantization_nsamples': 128, 'export_quantization_maxlen': 1024, 'export_legacy_format': False, 'export_hub_model_id': None, 'print_param_status': False}
+2024-07-18 09:58:11 | INFO | stdout | INFO 07-18 09:58:11 config.py:695] Defaulting to use mp for distributed inference
+2024-07-18 09:58:11 | INFO | stdout | INFO 07-18 09:58:11 llm_engine.py:174] Initializing an LLM engine (v0.5.2) with config: model='/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', speculative_config=None, tokenizer='/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1, use_v2_block_manager=False, enable_prefix_caching=False)
+2024-07-18 09:58:11 | INFO | stdout | INFO 07-18 09:58:11 custom_cache_manager.py:17] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m Process VllmWorkerProcess:
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m Traceback (most recent call last):
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     self.run()
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     worker = worker_factory()
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     prop = get_device_properties(device)
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m     raise RuntimeError(
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49948)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m Process VllmWorkerProcess:
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m Traceback (most recent call last):
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     self.run()
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     worker = worker_factory()
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     prop = get_device_properties(device)
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m     raise RuntimeError(
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49955)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m Process VllmWorkerProcess:
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m Traceback (most recent call last):
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     self.run()
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     worker = worker_factory()
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     prop = get_device_properties(device)
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m     raise RuntimeError(
+2024-07-18 09:58:11 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=49954)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 09:58:11 | INFO | stdout | ERROR 07-18 09:58:11 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 49948 died, exit code: 1
+2024-07-18 09:58:11 | INFO | stdout | ERROR 07-18 09:58:11 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 49954 died, exit code: 1
+2024-07-18 09:58:11 | INFO | stdout | ERROR 07-18 09:58:11 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 49955 died, exit code: 1
+2024-07-18 09:58:11 | INFO | stdout | INFO 07-18 09:58:11 multiproc_worker_utils.py:123] Killing local vLLM worker processes
+2024-07-18 10:02:23 | INFO | stdout | {'model_name_or_path': '/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', 'adapter_name_or_path': None, 'data_pth': '/home/zhangyh/rag_dataset/wikiQA_gpt.json', 'max_bs': '512', 'adapter_folder': None, 'cache_dir': None, 'use_fast_tokenizer': True, 'resize_vocab': False, 'split_special_tokens': False, 'new_special_tokens': None, 'model_revision': 'main', 'low_cpu_mem_usage': True, 'quantization_method': 'bitsandbytes', 'quantization_bit': None, 'quantization_type': 'nf4', 'double_quantization': True, 'quantization_device_map': None, 'rope_scaling': None, 'flash_attn': 'auto', 'shift_attn': False, 'mixture_of_depths': None, 'use_unsloth': False, 'visual_inputs': False, 'moe_aux_loss_coef': None, 'disable_gradient_checkpointing': False, 'upcast_layernorm': False, 'upcast_lmhead_output': False, 'train_from_scratch': False, 'infer_backend': 'vllm', 'vllm_maxlen': 8192, 'vllm_gpu_util': 0.9, 'vllm_enforce_eager': False, 'vllm_max_lora_rank': 32, 'offload_folder': 'offload', 'use_cache': True, 'infer_dtype': 'auto', 'hf_hub_token': None, 'ms_hub_token': None, 'export_dir': None, 'export_size': 1, 'export_device': 'cpu', 'export_quantization_bit': None, 'export_quantization_dataset': None, 'export_quantization_nsamples': 128, 'export_quantization_maxlen': 1024, 'export_legacy_format': False, 'export_hub_model_id': None, 'print_param_status': False}
+2024-07-18 10:02:23 | INFO | stdout | INFO 07-18 10:02:23 config.py:695] Defaulting to use mp for distributed inference
+2024-07-18 10:02:23 | INFO | stdout | INFO 07-18 10:02:23 llm_engine.py:174] Initializing an LLM engine (v0.5.2) with config: model='/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', speculative_config=None, tokenizer='/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1, use_v2_block_manager=False, enable_prefix_caching=False)
+2024-07-18 10:02:24 | INFO | stdout | INFO 07-18 10:02:24 custom_cache_manager.py:17] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m Process VllmWorkerProcess:
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m Traceback (most recent call last):
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     self.run()
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     worker = worker_factory()
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     prop = get_device_properties(device)
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m     raise RuntimeError(
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58817)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m Process VllmWorkerProcess:
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m Traceback (most recent call last):
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     self.run()
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     worker = worker_factory()
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     prop = get_device_properties(device)
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m     raise RuntimeError(
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58815)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m Process VllmWorkerProcess:
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m Traceback (most recent call last):
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     self.run()
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     worker = worker_factory()
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     prop = get_device_properties(device)
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m     raise RuntimeError(
+2024-07-18 10:02:24 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=58816)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 10:02:24 | INFO | stdout | ERROR 07-18 10:02:24 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 58815 died, exit code: 1
+2024-07-18 10:02:24 | INFO | stdout | ERROR 07-18 10:02:24 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 58816 died, exit code: 1
+2024-07-18 10:02:24 | INFO | stdout | ERROR 07-18 10:02:24 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 58817 died, exit code: 1
+2024-07-18 10:02:24 | INFO | stdout | INFO 07-18 10:02:24 multiproc_worker_utils.py:123] Killing local vLLM worker processes
+2024-07-18 10:05:30 | INFO | stdout | {'model_name_or_path': '/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', 'adapter_name_or_path': None, 'data_pth': '/home/zhangyh/rag_dataset/wikiQA_gpt.json', 'max_bs': '512', 'adapter_folder': None, 'cache_dir': None, 'use_fast_tokenizer': True, 'resize_vocab': False, 'split_special_tokens': False, 'new_special_tokens': None, 'model_revision': 'main', 'low_cpu_mem_usage': True, 'quantization_method': 'bitsandbytes', 'quantization_bit': None, 'quantization_type': 'nf4', 'double_quantization': True, 'quantization_device_map': None, 'rope_scaling': None, 'flash_attn': 'auto', 'shift_attn': False, 'mixture_of_depths': None, 'use_unsloth': False, 'visual_inputs': False, 'moe_aux_loss_coef': None, 'disable_gradient_checkpointing': False, 'upcast_layernorm': False, 'upcast_lmhead_output': False, 'train_from_scratch': False, 'infer_backend': 'vllm', 'vllm_maxlen': 8192, 'vllm_gpu_util': 0.9, 'vllm_enforce_eager': False, 'vllm_max_lora_rank': 32, 'offload_folder': 'offload', 'use_cache': True, 'infer_dtype': 'auto', 'hf_hub_token': None, 'ms_hub_token': None, 'export_dir': None, 'export_size': 1, 'export_device': 'cpu', 'export_quantization_bit': None, 'export_quantization_dataset': None, 'export_quantization_nsamples': 128, 'export_quantization_maxlen': 1024, 'export_legacy_format': False, 'export_hub_model_id': None, 'print_param_status': False}
+2024-07-18 10:05:30 | INFO | stdout | INFO 07-18 10:05:30 config.py:695] Defaulting to use mp for distributed inference
+2024-07-18 10:05:30 | INFO | stdout | INFO 07-18 10:05:30 llm_engine.py:174] Initializing an LLM engine (v0.5.2) with config: model='/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', speculative_config=None, tokenizer='/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1, use_v2_block_manager=False, enable_prefix_caching=False)
+2024-07-18 10:05:31 | INFO | stdout | INFO 07-18 10:05:31 custom_cache_manager.py:17] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m Process VllmWorkerProcess:
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m Traceback (most recent call last):
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     self.run()
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     worker = worker_factory()
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     prop = get_device_properties(device)
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m     raise RuntimeError(
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65374)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m Process VllmWorkerProcess:
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m Traceback (most recent call last):
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     self.run()
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     worker = worker_factory()
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     prop = get_device_properties(device)
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m     raise RuntimeError(
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65373)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m Process VllmWorkerProcess:
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m Traceback (most recent call last):
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     self.run()
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     worker = worker_factory()
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     prop = get_device_properties(device)
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m     raise RuntimeError(
+2024-07-18 10:05:31 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=65375)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 10:05:31 | INFO | stdout | ERROR 07-18 10:05:31 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 65373 died, exit code: 1
+2024-07-18 10:05:31 | INFO | stdout | ERROR 07-18 10:05:31 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 65374 died, exit code: 1
+2024-07-18 10:05:31 | INFO | stdout | ERROR 07-18 10:05:31 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 65375 died, exit code: 1
+2024-07-18 10:05:31 | INFO | stdout | INFO 07-18 10:05:31 multiproc_worker_utils.py:123] Killing local vLLM worker processes
+2024-07-18 10:07:52 | INFO | stdout | {'model_name_or_path': '/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', 'adapter_name_or_path': None, 'data_pth': '/home/zhangyh/rag_dataset/wikiQA_gpt.json', 'max_bs': '512', 'adapter_folder': None, 'cache_dir': None, 'use_fast_tokenizer': True, 'resize_vocab': False, 'split_special_tokens': False, 'new_special_tokens': None, 'model_revision': 'main', 'low_cpu_mem_usage': True, 'quantization_method': 'bitsandbytes', 'quantization_bit': None, 'quantization_type': 'nf4', 'double_quantization': True, 'quantization_device_map': None, 'rope_scaling': None, 'flash_attn': 'auto', 'shift_attn': False, 'mixture_of_depths': None, 'use_unsloth': False, 'visual_inputs': False, 'moe_aux_loss_coef': None, 'disable_gradient_checkpointing': False, 'upcast_layernorm': False, 'upcast_lmhead_output': False, 'train_from_scratch': False, 'infer_backend': 'vllm', 'vllm_maxlen': 8192, 'vllm_gpu_util': 0.9, 'vllm_enforce_eager': False, 'vllm_max_lora_rank': 32, 'offload_folder': 'offload', 'use_cache': True, 'infer_dtype': 'auto', 'hf_hub_token': None, 'ms_hub_token': None, 'export_dir': None, 'export_size': 1, 'export_device': 'cpu', 'export_quantization_bit': None, 'export_quantization_dataset': None, 'export_quantization_nsamples': 128, 'export_quantization_maxlen': 1024, 'export_legacy_format': False, 'export_hub_model_id': None, 'print_param_status': False}
+2024-07-18 10:07:52 | INFO | stdout | INFO 07-18 10:07:52 config.py:695] Defaulting to use mp for distributed inference
+2024-07-18 10:07:52 | INFO | stdout | INFO 07-18 10:07:52 llm_engine.py:174] Initializing an LLM engine (v0.5.2) with config: model='/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', speculative_config=None, tokenizer='/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None), seed=0, served_model_name=/home/zhangyh/projs/LLaMA-Factory/output_qwen2_0715_e1, use_v2_block_manager=False, enable_prefix_caching=False)
+2024-07-18 10:07:53 | INFO | stdout | INFO 07-18 10:07:53 custom_cache_manager.py:17] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m Process VllmWorkerProcess:
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m Traceback (most recent call last):
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     self.run()
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     worker = worker_factory()
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     prop = get_device_properties(device)
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m     raise RuntimeError(
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6149)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m Process VllmWorkerProcess:
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m Traceback (most recent call last):
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     self.run()
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     worker = worker_factory()
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     prop = get_device_properties(device)
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m     raise RuntimeError(
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6150)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m Process VllmWorkerProcess:
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m Traceback (most recent call last):
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     self.run()
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/multiprocessing/process.py", line 108, in run
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     self._target(*self._args, **self._kwargs)
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 210, in _run_worker_process
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     worker = worker_factory()
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/gpu_executor.py", line 70, in _create_worker
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     wrapper.init_worker(**self._get_worker_kwargs(local_rank, rank,
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 326, in init_worker
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     self.worker = worker_class(*args, **kwargs)
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 90, in __init__
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     self.model_runner: GPUModelRunnerBase = ModelRunnerClass(
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 229, in __init__
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     self.attn_backend = get_attn_backend(
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 45, in get_attn_backend
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     backend = which_attn_to_use(num_heads, head_size, num_kv_heads,
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/attention/selector.py", line 148, in which_attn_to_use
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     if torch.cuda.get_device_capability()[0] < 8:
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 430, in get_device_capability
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     prop = get_device_properties(device)
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 444, in get_device_properties
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     _lazy_init()  # will define _get_device_properties
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/cuda/__init__.py", line 279, in _lazy_init
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m     raise RuntimeError(
+2024-07-18 10:07:53 | ERROR | stderr | [1;36m(VllmWorkerProcess pid=6151)[0;0m RuntimeError: Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method
+2024-07-18 10:07:53 | INFO | stdout | ERROR 07-18 10:07:53 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 6149 died, exit code: 1
+2024-07-18 10:07:53 | INFO | stdout | ERROR 07-18 10:07:53 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 6150 died, exit code: 1
+2024-07-18 10:07:53 | INFO | stdout | ERROR 07-18 10:07:53 multiproc_worker_utils.py:120] Worker VllmWorkerProcess pid 6151 died, exit code: 1
+2024-07-18 10:07:53 | INFO | stdout | INFO 07-18 10:07:53 multiproc_worker_utils.py:123] Killing local vLLM worker processes
+2024-07-18 10:17:54 | ERROR | stderr | Traceback (most recent call last):
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/main.py", line 32, in <module>
+2024-07-18 10:17:54 | ERROR | stderr | 
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/test_rrag/test_r.py", line 12, in get_rouge
+2024-07-18 10:17:54 | ERROR | stderr |     result = generate_data(**kwargs)
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/projs/rrag/rrag/generator/generate.py", line 13, in generate_data
+2024-07-18 10:17:54 | ERROR | stderr |     llm = LLM(model_path, tensor_parallel_size=4, trust_remote_code=True,
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 150, in __init__
+2024-07-18 10:17:54 | ERROR | stderr |     self.llm_engine = LLMEngine.from_engine_args(
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 421, in from_engine_args
+2024-07-18 10:17:54 | ERROR | stderr |     engine = cls(
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 249, in __init__
+2024-07-18 10:17:54 | ERROR | stderr |     self.model_executor = executor_class(
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/distributed_gpu_executor.py", line 25, in __init__
+2024-07-18 10:17:54 | ERROR | stderr |     super().__init__(*args, **kwargs)
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 46, in __init__
+2024-07-18 10:17:54 | ERROR | stderr |     self._init_executor()
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_gpu_executor.py", line 83, in _init_executor
+2024-07-18 10:17:54 | ERROR | stderr |     self._run_workers("init_device")
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/executor/multiproc_gpu_executor.py", line 135, in _run_workers
+2024-07-18 10:17:54 | ERROR | stderr |     driver_worker_output = driver_worker_method(*args, **kwargs)
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 132, in init_device
+2024-07-18 10:17:54 | ERROR | stderr |     init_worker_distributed_environment(self.parallel_config, self.rank,
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/worker/worker.py", line 343, in init_worker_distributed_environment
+2024-07-18 10:17:54 | ERROR | stderr |     init_distributed_environment(parallel_config.world_size, rank,
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/vllm/distributed/parallel_state.py", line 812, in init_distributed_environment
+2024-07-18 10:17:54 | ERROR | stderr |     torch.distributed.init_process_group(
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 75, in wrapper
+2024-07-18 10:17:54 | ERROR | stderr |     return func(*args, **kwargs)
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 89, in wrapper
+2024-07-18 10:17:54 | ERROR | stderr |     func_return = func(*args, **kwargs)
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1305, in init_process_group
+2024-07-18 10:17:54 | ERROR | stderr |     store, rank, world_size = next(rendezvous_iterator)
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/distributed/rendezvous.py", line 199, in _tcp_rendezvous_handler
+2024-07-18 10:17:54 | ERROR | stderr |     store = _create_c10d_store(result.hostname, result.port, rank, world_size, timeout, use_libuv)
+2024-07-18 10:17:54 | ERROR | stderr |   File "/home/zhangyh/miniconda3/envs/rag_nlp_rl/lib/python3.10/site-packages/torch/distributed/rendezvous.py", line 174, in _create_c10d_store
+2024-07-18 10:17:54 | ERROR | stderr |     return TCPStore(
+2024-07-18 10:17:54 | ERROR | stderr | torch.distributed.DistStoreError: Timed out after 601 seconds waiting for clients. 1/4 clients joined.

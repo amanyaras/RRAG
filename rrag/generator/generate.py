@@ -3,14 +3,14 @@ from vllm import SamplingParams, LLM
 
 def generate_data(**kwargs):
     question_lst = kwargs["question_lst"]
-    model_path = kwargs["model_path"]
-    max_bs = kwargs["max_bs"]
+    model_path = kwargs["model_name_or_path"]
+    max_bs = int(kwargs["max_bs"])
     sampling_params = SamplingParams(
         temperature=0,
         top_p=0.50,
         max_tokens=1024
     )
-    llm = LLM(model_path, tensor_parallel_size=4, trust_remote_code=True,
+    llm = LLM(model_path, tensor_parallel_size=1, trust_remote_code=True,
               gpu_memory_utilization=0.95)
     output_lst = []
     for batch in range(0, len(question_lst), max_bs):

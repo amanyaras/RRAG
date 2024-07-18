@@ -1,17 +1,37 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import os
+os.environ["export VLLM_WORKER_MULTIPROC_METHOD"] = "spawn"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3,2,1,0"
+import torch
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+import multiprocessing
+
+from rrag.argument.parser import get_infer_args
+from test_rrag.test_r import get_rouge
+
+
+# def run_exp(args: Optional[Dict[str, Any]] = None, callbacks: List["TrainerCallback"] = []) -> None:
+#     callbacks.append(LogCallback())
+#     model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
+
+
+if __name__ == "__main__":
+    torch.multiprocessing.set_start_method("spawn")
+    # data = load_data("/home/zhangyh/rag_dataset/wikiQA_gpt.json")
+    # args = {
+    #     "question_lst": ["你是谁？"]*30,
+    #     "model_path": "/home/zhangyh/models/Qwen2-7B-Instruct",
+    #     "max_bs": 512
+    # }
+    # result = generate_data(**args)
+    # multiprocessing.set_start_method('spawn')
+    model_args, data_args, finetuning_args, generating_args = get_infer_args()
+    model_args = model_args.to_dict()
+
+    # finetuning_args = finetuning_args.
+    print(model_args)
+    ans = get_rouge(**model_args)
+    print(ans)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
@@ -52,6 +72,4 @@ offload_folder='offload',
 use_cache=True, 
 infer_dtype='auto', 
 print_param_status=False)
-
-
 """

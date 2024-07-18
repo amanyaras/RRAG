@@ -48,6 +48,14 @@ class ModelArguments:
             )
         },
     )
+    data_pth: Optional[str] = field(
+        default=None,
+        metadata={"help": "The data path."},
+    )
+    max_bs: Optional[str] = field(
+        default=None,
+        metadata={"help": "max_bs infer."},
+    )
     adapter_folder: Optional[str] = field(
         default=None,
         metadata={"help": "The folder containing the adapter weights to load."},

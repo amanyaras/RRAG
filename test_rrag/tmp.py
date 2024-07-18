@@ -5,7 +5,8 @@ from rrag.data.load import load_data
 from rrag.generator import generate_data
 from rrag.argument.parser import get_infer_args
 from typing import Optional, Dict, Any, List
-
+from rrag.eval.evaluator import cal_rouge
+from test_r import get_rouge
 
 # def run_exp(args: Optional[Dict[str, Any]] = None, callbacks: List["TrainerCallback"] = []) -> None:
 #     callbacks.append(LogCallback())
@@ -22,6 +23,7 @@ if __name__ == "__main__":
     # result = generate_data(**args)
     model_args, data_args, finetuning_args, generating_args = get_infer_args()
     print(model_args)
+    ans = get_rouge()
 
     # print(result[:9])
     # print(len(data))
