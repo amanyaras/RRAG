@@ -84,3 +84,12 @@ use_cache=True,
 infer_dtype='auto', 
 print_param_status=False)
 """
+
+"""
+我们后期可以用大模型进行数据改写，
+让他生成一些有毒的内容，
+
+
+下一个思想模型本身的self-adv
+
+"""

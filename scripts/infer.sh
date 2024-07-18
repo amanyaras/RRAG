@@ -1,5 +1,5 @@
 python /home/zhangyh/projs/rrag/main.py \
-  --model_name_or_path /home/zhangyh/models/llama-7b-hf \
+  --model_name_or_path /home/zhangyh/models/tora-7b \
   --phase infer \
   --template llama \
   --infer_backend vllm \
