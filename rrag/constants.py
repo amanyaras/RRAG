@@ -2,7 +2,9 @@ import os
 
 
 LOGDIR = "/home/zhangyh/projs/rrag/logdir"
-
+PROJECT_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+RESULT_DIR = os.path.join(PROJECT_DIR, "result")
+print(RESULT_DIR)
 CHECKPOINT_NAMES = ""
 # Copyright 2024 the LlamaFactory team.
 #

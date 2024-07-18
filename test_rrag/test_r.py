@@ -11,4 +11,5 @@ def get_rouge(**kwargs):
     kwargs["question_lst"] = question_lst
     result = generate_data(**kwargs)
     score = cal_rouge(target, result)
+
     return score

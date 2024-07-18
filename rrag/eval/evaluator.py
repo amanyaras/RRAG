@@ -161,10 +161,10 @@ def run_eval() -> None:
 def cal_rouge(generatr_lst: List, target_lst: List):
 
     # 创建 Rouge 对象
-    rouge = Rouge()
+    rouge = Rouge(metrics=["rouge-1", "rouge-2", "rouge-3", "rouge-4", "rouge-5", "rouge-l"])
 
     # 计算分数
-    scores = rouge.get_scores(generatr_lst, target_lst)
+    scores = rouge.get_scores(generatr_lst, target_lst, avg=True)
 
     # 打印分数
     print(scores)

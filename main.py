@@ -1,12 +1,13 @@
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 os.environ["export VLLM_WORKER_MULTIPROC_METHOD"] = "spawn"
-os.environ["CUDA_VISIBLE_DEVICES"] = "3,2,1,0"
 import torch
 
 
 import multiprocessing
 
 from rrag.argument.parser import get_infer_args
+# from rrag.utils.
 from test_rrag.test_r import get_rouge
 
 
