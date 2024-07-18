@@ -18,8 +18,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from dataclasses import dataclass, field
-from typing import Literal, Optional
+from dataclasses import dataclass, field, asdict
+from typing import Literal, Optional, Dict, Any
 
 
 @dataclass
@@ -112,6 +112,15 @@ class DataArguments:
         default=None,
         metadata={"help": "Path to save or load the tokenized datasets."},
     )
+
+    def to_dict(self) -> Dict[str, Any]:
+        args = asdict(self)
+        # if args.get("max_new_tokens", -1) > 0:
+        #     args.pop("max_length", None)
+        # else:
+        #     args.pop("max_new_tokens", None)
+        return args
+
 
     def __post_init__(self):
         if self.reserved_label_len >= self.cutoff_len:

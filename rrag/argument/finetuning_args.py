@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from dataclasses import dataclass, field
-from typing import List, Literal, Optional
+from dataclasses import dataclass, field, asdict
+from typing import List, Literal, Optional, Dict, Any
 
 
 @dataclass
@@ -357,6 +357,14 @@ class FinetuningArguments(FreezeArguments, LoraArguments, RLHFArguments,\
         default=False,
         metadata={"help": "Whether or not to save the training loss curves."},
     )
+
+    def to_dict(self) -> Dict[str, Any]:
+        args = asdict(self)
+        # if args.get("max_new_tokens", -1) > 0:
+        #     args.pop("max_length", None)
+        # else:
+        #     args.pop("max_new_tokens", None)
+        return args
 
     def __post_init__(self):
         def split_arg(arg):

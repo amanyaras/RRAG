@@ -24,12 +24,25 @@ if __name__ == "__main__":
     logger = build_logger(__file__, "{}.log".format("evaluator"), exp_dir)
     model_args, data_args, finetuning_args, generating_args = get_infer_args()
     model_args = model_args.to_dict()
+    generating_args = generating_args.to_dict()
+    finetuning_args = finetuning_args.to_dict()
+    data_args = data_args.to_dict()
+    data_args = data_args
     if model_args["phase"] == "infer":
         # finetuning_args = finetuning_args.
         logger.info(model_args)
         ans = get_rouge(**model_args)
         save_data(os.path.join(exp_dir, "result.json"), ans)
+        save_data(os.path.join(exp_dir, "config.json"), [model_args, data_args, finetuning_args, generating_args])
         logger.info(ans)
+
+    elif model_args["phase"] == "infer_rrag":
+        # TODO 还没写呢
+        pass
+
+    else:
+        pass
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
