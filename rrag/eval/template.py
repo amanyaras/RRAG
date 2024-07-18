@@ -113,3 +113,12 @@ _register_eval_template(
     choice="\n内容是：{content}. 问题是：{content}",
     answer="\n你的输出是：",
 )
+
+RAG_TEMPLATE = f"""
+请根据我给出的文档来回答我的问题：
+文档是{{}}
+
+问题是{{}}
+
+你的回答是：
+"""

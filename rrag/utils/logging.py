@@ -25,7 +25,7 @@ handler = None
 visited_loggers = set()
 
 
-def build_logger(logger_name, logger_filename):
+def build_logger(logger_name, logger_filename, logdir=""):
     global handler
 
     formatter = logging.Formatter(
@@ -65,10 +65,14 @@ def build_logger(logger_name, logger_filename):
     # Avoid httpx flooding POST logs
     logging.getLogger("httpx").setLevel(logging.WARNING)
 
+    # if logdir != "":
+    #     LOGDIR = logdir
+    # else:
+    #     global LOGDIR
     # if LOGDIR is empty, then don't try output log to local file
-    if LOGDIR != "":
-        os.makedirs(LOGDIR, exist_ok=True)
-        filename = os.path.join(LOGDIR, logger_filename)
+    if logdir != "":
+        os.makedirs(logdir, exist_ok=True)
+        filename = os.path.join(logdir, logger_filename)
         handler = logging.handlers.TimedRotatingFileHandler(
             filename, when="D", utc=True, encoding="utf-8"
         )

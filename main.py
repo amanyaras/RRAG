@@ -2,13 +2,14 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 os.environ["export VLLM_WORKER_MULTIPROC_METHOD"] = "spawn"
 import torch
-
-
+from rrag.utils.setting import setting_env_init
+from rrag.utils.logging import build_logger
 import multiprocessing
 
 from rrag.argument.parser import get_infer_args
 # from rrag.utils.
 from test_rrag.test_r import get_rouge
+
 
 
 # def run_exp(args: Optional[Dict[str, Any]] = None, callbacks: List["TrainerCallback"] = []) -> None:
@@ -18,21 +19,15 @@ from test_rrag.test_r import get_rouge
 
 if __name__ == "__main__":
     torch.multiprocessing.set_start_method("spawn")
-    # data = load_data("/home/zhangyh/rag_dataset/wikiQA_gpt.json")
-    # args = {
-    #     "question_lst": ["你是谁？"]*30,
-    #     "model_path": "/home/zhangyh/models/Qwen2-7B-Instruct",
-    #     "max_bs": 512
-    # }
-    # result = generate_data(**args)
-    # multiprocessing.set_start_method('spawn')
+    exp_dir = setting_env_init()
+    logger = build_logger(__file__, "{}.log".format("evaluator"), exp_dir)
     model_args, data_args, finetuning_args, generating_args = get_infer_args()
     model_args = model_args.to_dict()
-
-    # finetuning_args = finetuning_args.
-    print(model_args)
-    ans = get_rouge(**model_args)
-    print(ans)
+    if model_args["phase"] == "infer":
+        # finetuning_args = finetuning_args.
+        logger.info(model_args)
+        ans = get_rouge(**model_args)
+        logger.info(ans)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 

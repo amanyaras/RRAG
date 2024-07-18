@@ -52,6 +52,10 @@ class ModelArguments:
         default=None,
         metadata={"help": "The data path."},
     )
+    phase: Optional[str] = field(
+        default="infer",
+        metadata={"help": "训练还是推理."},
+    )
     max_bs: Optional[str] = field(
         default=None,
         metadata={"help": "max_bs infer."},

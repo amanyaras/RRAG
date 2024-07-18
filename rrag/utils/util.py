@@ -25,7 +25,7 @@ handler = None
 visited_loggers = set()
 
 
-def build_logger(logger_name, logger_filename):
+def build_logger(logger_name, logger_filename, logdir=""):
     global handler
 
     formatter = logging.Formatter(
@@ -64,6 +64,9 @@ def build_logger(logger_name, logger_filename):
 
     # Avoid httpx flooding POST logs
     logging.getLogger("httpx").setLevel(logging.WARNING)
+
+    if logdir != "":
+        LOGDIR = logdir
 
     # if LOGDIR is empty, then don't try output log to local file
     if LOGDIR != "":
