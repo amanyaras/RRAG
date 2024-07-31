@@ -1,0 +1,8 @@
+# 忽略所有 .log 文件
+*.log
+
+# 忽略某个文件
+secret.txt
+
+# 忽略某个目录
+result/
