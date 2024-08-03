@@ -10,6 +10,7 @@ import multiprocessing
 from rrag.argument.parser import get_infer_args
 # from rrag.utils.
 from test_rrag.test_r import get_rouge
+from test_rrag.test_u import get_unieval
 
 
 
@@ -31,7 +32,7 @@ if __name__ == "__main__":
     if model_args["phase"] == "infer":
         # finetuning_args = finetuning_args.
         logger.info(model_args)
-        ans = get_rouge(**model_args)
+        ans = get_unieval(**model_args)
         save_data(os.path.join(exp_dir, "result.json"), ans)
         save_data(os.path.join(exp_dir, "config.json"), [model_args, data_args, finetuning_args, generating_args])
         logger.info(ans)
