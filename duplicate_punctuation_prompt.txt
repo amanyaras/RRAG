@@ -1,0 +1,48 @@
+You are an intelligent assistant that rewrites user-provided content.You need to rewrite the content in the <context></context> tag.
+
+The rewriting requirements are as follows:
+1. Randomly replace the punctuation marks in the content of the <context></context> tag, for example, you can replace the period with a comma or replace the comma with a question mark.
+2. You can also add other punctuation marks after the punctuation marks, such as adding a period or exclamation mark after the period, or adding a comma or question mark after the comma, etc. to change the punctuation marks in a random combination.
+3. You don't have to consider whether it will affect the meaning of the text in the tag content.
+4. The answer must be in English.
+5. It is necessary to insert identifiers between words. The inserted identifiers can be: 😀, #, 😍,😎, ❃, &, *, 🥳, ·🤯·, /, 🤣’, |,@,(ง'̀-'́)ง,(¬‿¬),( ^_^)/~~,(°ᴥ°),^_^,✨,❇,✿,❄ etc.
+6. The inserted identifiers need to be evenly spaced between the texts. There should not be more identifiers at the beginning and fewer inserted identifiers at the end.
+
+You have the following examples:
+###
+<context>
+Auburndale is a city in Polk County, Florida , United States . The popul(ง'̀-'́)งation was 11,032 at the 2000 census. According to the U.S Census estimates of 2005, the city had a population of 12,381.
+</context>
+answer:
+Aub#u( ͡° ͜ʖ ͡°)rnd%ale is a c,,ity in Po,^@lk Cou**nty, Flo*rida👹 ,?&, United States . The popu!😍lation was 11,?032 at the 2000 c❃!en&sus. Accor🥳ding to the U..S Census estimates-$ of 20*&05, the city had a pop\\ulation of 12,*381.?@(^_^)
+###
+<context>
+The quick br&own fox jumps over the lazy dog.
+</context>
+answer:
+T🤣’he qu=#ick bro$wn fox ^%jumps*8 over the lazy do😍’"'g..?=👹
+###
+<context>
+Periodic table with electron shells An electron shell may be thought of as an orbit followed by electrons around an atom 's nucleus . The closest shell to the nucleus is called the "1 shell" (also called "K shell"), followed by the "2 shell" (or "L shell"), then the "3 shell" (or "M shell"), and so on farther and farther from the nucleus. The shell letters K, L, M, ..., used in the X-ray notation , are alphabetical. Each shell can contain only a fixed number of electrons: The 1st shell can hold up to two electrons, the 2nd shell can hold up to eight electrons, the 3rd shell can hold up to 18, and 4th shell can hold up to 32 and so on. Since electrons are electrically attracted to the nucleus, an atom's electrons will generally occupy outer shells only if the more inner shells have already been completely filled by other electrons. However, this is not a strict requirement: Atoms may have two or even three incomplete outer shells. (See Madelung rule for more details.) For an explanation of why electrons exist in these shells see electron configuration . The electrons in the outermost occupied shell (or shells) determine the chemical properties of the atom; it is called the valence shell. Each shell consists of one or more subshells, and each subshell consists of one or more atomic orbitals .
+</context>
+answer:
+Peri(ง'̀-'́)ง,(👹¬‿¬)od*8%ic table with &%electron shells An electron sh(ง'̀-'́)งell ma@~y be thought of as an orbit followed by electrons around an ato&*()m 's nucleus ... The closest shell to the nucleus is called the "1 shell" (also called "K shell"), foll#@owed by the "2$? shell" (or "L shell"),?! then th*?e "3 shell" (or "M shell"), and so on farther and farther from the nucleus. The shell let😎🤣ters K, L, M, ..., used in the X-ray notation , are alph&%abeti@cal. Each shell can contain only a fixed num#ber of electrons:: The 1st shell c(ง'̀-'́)ง,(¬‿¬)an hold up to two electrons, the 2nd shell can hold up to eight electrons, the 3rd shell can hold up to 18, and 4th she（*）ll can hold up to 32 and so on.👹 Since electrons are elec&trically attra~》cted to the nucleu👹s, an atom's el(ง'̀-'́)ง,(¬‿¬)ectrons will generally occupy outer shells only if the more in……ner she*lls have*7 alre🤣ady been completely filled………… by other electrons. However, this is not a strict requirement: Atoms may have two or even three incomplete outer shells.. (See Madelung rule for more det&@ails.) For an explanation of why electrons exist in these shells see electron con*figu@rati#on . ##The electron？s in the outermost occupied shell (or shells) determine the che/。mical properties o。。《f the atom; it is calle）*d the val(ง'̀-'́)ง,(¬‿¬)ence shell. Each shell consists of one or more subshe😎lls,, and each subshell consists of one or more atomic o(ง'̀-'́)ง,(¬‿¬)rbi*%tals ..(^_^)🥺
+###
+<context>
+The quick brown fox jumps over the lazy dog.
+</context>
+answer:
+The qui%$ck bro-wn fo&x jumps o🥳🥳ver :"the la*🤣zy dog?>.$🦄
+###
+<context>
+This tablespoon has a capacity of about 15 mL. Measuring Spoons In the US and parts of Canada, a tablespoon is the largest type of spoon used for eating from a bowl. In the UK, Europe and most Commonwealth countries, a tablespoon is a type of large spoon usually used for serving. In countries where a tablespoon is a serving spoon, the nearest equivalent to the US tablespoon is either the dessert spoon or the soup spoon . A tablespoonful, nominally the capacity of one tablespoon, is commonly used as a measure of volume in cooking . It is abbreviated as T, tb, tbs, tbsp, tblsp, or tblspn. The capacity of ordinary tablespoons is not regulated by law and is subject to considerable variation. In the USA one tablespoon (measurement unit) is approximately 15 mL; the capacity of an actual tablespoon (dining utensil) ranges from 7 mL to 14 mL. In Australia one tablespoon (measurement unit) is 20 mL.
+</context>
+answer:
+This t,bs&p❇oon h&&s a ca,pacity of about 15 &ML. Measur%ng Spoo~ns In th* US and parts of Canad@, a tablespoon is th* larget$ type of spoon used for eating from a bowl. In th* UK, Eu~ope and most Commonwealth count ries, a tablespoon is a type of larrge spoon usually used for serving. In countr*es wh?re a tablespoon is a serving spoon, th* nearest equivalent to th* US t🥳😢ablespoon is either th* desser~ spoon or th* soup spoon . A tablespoonful, nominally th* capacity of one tablespoon, is commonly used as a measure of vo✼lu~me in cookin~. It is abbrevi@ted as T, tb, tbs, tbsp, tblsp, or tblspn. Th* capacity of ordinary tablespoons is not regulat* by law and is subject to considerable variati@n. In th* USA one tablespoon (meas🤗ur*ment unit) is appro🤮ximately 15 &ML; th* capacity of an actu*(°ᴥ°)al tablespoon (dining utensil) r,anges from 7 &ML to 14 &ML. In Austra利亚 one tables🥺poon (measurement unit) is 2(ง'̀-'́)ง0 &ML.🤗🤮
+###
+<context>
+Modern pointe shoes. The edge of the toe pad, which is inserted between the foot and toe box for cushioning, can be seen on the right foot. A pointe shoe is a type of shoe worn by ballet dancers when performing pointe work . Pointe shoes developed from the desire for dancers to appear weightless and sylph -like and have evolved to enable dancers to dance en pointe (on the tips of their toes) for extended periods of time. They are normally worn by female dancers, though male dancers may wear them for unorthodox roles such as the ugly stepsisters in Cinderella , Bottom in A Midsummer Night's Dream , or men performing as women in dance companies such as Les Ballets Trockadero and Grandiva. They are manufactured in a variety of colors, most commonly in shades of light pink.
+</context>
+answer:
+Modern p😍oi$te s(°ᴥ°)-hu*🥳es. The edge of the to$e pad, which i$ inserted betw@en the foot and to$e box for cusv🥰hioning, can be seen on the right foot. A poi*te shu*e i$ a ty$e of shu*e worn by balle$ troupe dancers when perfor(ง'̀-'́)งming poi(°ᴥ°)$te work . Poi*te shu$es developed fro$ the desire for danc*ers to appea$ weightle$$ and sylph-lik$ and have evolved to ena$ble danc*ers to dance en poi*te (on the tips of their toez) for extended perio(••) ( ••)>⌐■-■ (⌐■_■)d$ of time. They a$e normally worn by femal$ danc*ers, th🤢ough male danc*ers ma😍y wear them for unorthodox roles such as the ugly step$isters in Cindere$la , B ottom in A Mi$ternight'$ Drem , or men performing as women in dance compa$ies such as Les Ballets Troc(ง'̀-'́)งkadore$ and Gran👽di$va. They are manufact😎u$ed in a var=ie=ty of colo$rs, most com(︶^︶)monly in sh-ad*es of light p^i🤡nk.(︶^︶)(︶^︶)(^_^)🥺🥳(ง'̀-'́)ง
+
